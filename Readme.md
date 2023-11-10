@@ -78,6 +78,7 @@ __Le HTML coté client__
   - La balise ***\<div>***  
 
     - La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
+
       - `<div> ... </div>`  
 
   - La balise ***\<nav>***  
@@ -148,15 +149,15 @@ __Le HTML coté client__
 
       - `<ol> ... </ol>`  
 
-      ```
-      Ces éléments apportent une structure visuelle à l'information
-      ceci qui est crucial pour la lisibilité de la page  
-      ```
+        ```
+        Ces éléments apportent une structure visuelle à l'information
+        ceci qui est crucial pour la lisibilité de la page  
+        ```
       
-      ```
-      Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale.
-      Il faut ajouter une liste imbriquée dans une autre liste
-      ```
+        ```
+        Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale.
+        Il faut ajouter une liste imbriquée dans une autre liste
+        ```
 
   - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
