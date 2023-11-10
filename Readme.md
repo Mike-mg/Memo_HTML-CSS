@@ -58,6 +58,7 @@ __Le HTML coté client__
       - Cette balise permet de spécifier au navigateur le type de document HTML utilisé. Il est donc crucial de toujours inclure cette balise au début de votre code HTML  
 
   - La balise ***\<html>*** que l’on appelle aussi l’élément racine du document HTML marque le début du document HTML  
+
     - `<html> ... </html>`  
 
   - La balise ***\<head>*** inclut toutes les informations qui ne s’affichent pas directement dans la page web, mais qui sont utiles pour le bon fonctionnement du code, ainsi que pour les moteurs de recherche  
@@ -68,9 +69,9 @@ __Le HTML coté client__
 
     - `<body> ... </body>`  
 
-    ```
-    Les balises \<head> et \<body>, qui sont deux autres balises essentielles de tout document HTML, viennent s’imbriquer entre la balise d’ouverture \<html> et la balise de fermeture \</html>
-    ```  
+  ```
+  Les balises \<head> et \<body>, qui sont deux autres balises essentielles de tout document HTML, viennent s’imbriquer entre la balise d’ouverture \<html> et la balise de fermeture \</html>
+  ```  
 
 - __Les balises structurelles en HTML__  
 
