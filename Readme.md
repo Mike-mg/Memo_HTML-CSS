@@ -69,9 +69,7 @@ __Le HTML coté client__
 
     - `<body> ... </body>`  
 
-  ```
-  Les balises <head> et <body>, qui sont deux autres balises essentielles de tout document HTML, viennent s’imbriquer entre la balise d’ouverture <html> et la balise de fermeture </html>  
-  ```  
+  > Les balises ***\<head>*** et ***\<body>***, qui sont deux autres balises essentielles de tout document HTML, viennent s’imbriquer entre la balise d’ouverture ***\<html>*** et la balise de fermeture ***\</html>***    
 
 - __Les balises structurelles en HTML__  
 
@@ -119,23 +117,26 @@ __Le HTML coté client__
 ##
 ## ***__Organiser son texte__***  
 
-1. __Les balises \<h1> à \<h6>__  
+- __Les balises \<h1> à \<h6>__  
 
-    - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres  
+  - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres  
 
----
+    >\<h1> ... \</h1>  
+    >\<h2> ... \</h2>  
+    >\<h3> ... \</h3>  
+    >\<h4> ... \</h4>  
+    >\<h5> ... \</h5>  
+    >\<h6> ... \</h6>  
 
-2. __La balise \<p>__  
+- __La balise \<p>__  
 
     - Les balises ***\<p>*** sont utilisées en HTML pour délimiter un paragraphe de texte, elle permet d'ajouter des sauts de ligne entre les différents paragraphes  
 
       - `<p> ... </p>`
 
----
+- Les balises \<ul> et \<ol>__  
 
-3. __Les balises \<ul> et \<ol>__  
-
-    - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
+  - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
 
       - `<ul> ... </ul>`
 
@@ -143,33 +144,28 @@ __Le HTML coté client__
 
       - `<ol> ... </ol>`
 
-      ```
-      Ces éléments apportent une structure visuelle à l'information, ce qui est crucial pour la lisibilité de la page
-      
-      Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale. Pour cela, il faut ajouter une liste imbriquée dans une autre liste, qui sera alors indentée et affichée avec un symbole différent
-      ```  
+      > Ces éléments apportent une structure visuelle à l'information, ce qui est crucial pour la lisibilité de la page  
+
+      > Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale. Pour cela, il faut ajouter une liste imbriquée dans une autre liste, qui sera alors indentée et affichée avec un symbole différent  
 
     - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
         - Exemple avec la balise ***\<ul>***  
 
-          ```  
-          <ul>  
-            <li> ... </li>  
-            <li> ... </li>  
-            <li> ... </li>  
-          </ul>  
-          ```  
+          > \<ul>  
+          > \<li> ... \</li>  
+          > \<li> ... \</li>  
+          > \<li> ... \</li>  
+          > \<li> ... \</li>  
+          > \</ul>  
 
         - Exemple avec la balise ***\<ol>***  
 
-          ```  
-          <ol>  
-            <li> ... </li>  
-            <li> ... </li>  
-            <li> ... </li>  
-          </ol>  
-          ```  
+          > \<ol>  
+          > \<li> ... \</li>  
+          > \<li> ... \</li>  
+          > \<li> ... \</li>  
+          > \</ol> 
 
 ---
 
