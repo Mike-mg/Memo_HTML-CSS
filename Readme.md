@@ -77,43 +77,43 @@ __Le HTML coté client__
 
   - La balise ***\<div>***  
 
-    - La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
+    > La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
 
       - `<div> ... </div>`  
 
   - La balise ***\<nav>***  
 
-    - Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site  
+    > Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site  
 
       - `<nav> ... </nav>`  
 
   - La balise ***\<header>***  
 
-    - Dans le ***\<header>***, se compose généralement du titre, d’un texte d’introduction ou encore une bannière, c’est ici que vous placerez les éléments qui permettront d’identifier la thématique de votre page web.  
+    > Dans le ***\<header>***, se compose généralement du titre, d’un texte d’introduction ou encore une bannière, c’est ici que vous placerez les éléments qui permettront d’identifier la thématique de votre page web.  
 
       - `<header> ... </header>`  
 
   - La balise ***\<footer>***  
 
-    - Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise  
+    > Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise  
 
       - `<footer> ... </footer>`  
 
   - La balise ***\<section>***  
 
-    - La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page  
+    > La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page  
       
       - `<section> ... </section>`  
 
   - La balise ***\<article>***  
 
-    - La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires  
+    > La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires  
 
       - `<article> ... </article>`  
 
   - La balise ***\<aside>***  
 
-    - la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes  
+    > la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes  
 
       - `<aside> ... </aside>`  
 
@@ -149,15 +149,9 @@ __Le HTML coté client__
 
       - `<ol> ... </ol>`  
 
-        ```
-        Ces éléments apportent une structure visuelle à l'information
-        ceci qui est crucial pour la lisibilité de la page  
-        ```
-      
-        ```
-        Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale.
-        Il faut ajouter une liste imbriquée dans une autre liste
-        ```
+        - Ces éléments apportent une structure visuelle à l'information  
+        - Ceci qui est crucial pour la lisibilité de la page  
+        - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
 
   - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
@@ -193,10 +187,7 @@ __Le HTML coté client__
 
 - __Le formatage du texte__  
 
-    ```
-    Lors de la création d'une page web, il est important de considérer la mise en forme
-    Le HTML offre plusieurs balises qui permettent de mettre en évidence certains mots
-    ```  
+    > Lors de la création d'une page web, il est important de considérer la mise en forme, le HTML a plusieurs balises qui permettent de mettre en évidence certains mots ou texte
 
     - Les balises ***\<b>*** et ***\<strong>*** permettent de faire apparaître le contenu en gras
 
@@ -226,9 +217,7 @@ __Le HTML coté client__
 
       - `<small> ... </small>`  
 
----
-
-6. __Le placement du texte en HTML__  
+- __Le placement du texte en HTML__  
 
     - Les balises ***\<br>*** et ***\<hr>*** sont utilisées en HTML pour insérer des sauts de ligne et des séparateurs horizontaux dans le texte
 
@@ -248,73 +237,60 @@ __Le HTML coté client__
 
       - `<span> ... </span>`  
 
----
----
----
-
+##
 ## ***__Le langage hypertexte__***
 
   - ***Les liens hypertextes***  
 
-    ```
     - Un lien hypertexte est un élément interactif d’une page web
-
     - Cela permet à l’utilisateur qui clique dessus de naviguer entre différents contenus
-    
     - Les liens hypertextes peuvent prendre différents formats commes par exemple
-      
-      * Du texte
-      * Des images
-      * Des boutons
-    ```  
 
-    - La balise ***\<a>*** (ancre ou anchor en anglais) est la balise utilisée pour créer des hyperliens en HTML qui comporte différents attributs 
+      - Du texte  
+      - Des images  
+      - Des boutons  
 
-      - `<a> ... </a>`  
+  - La balise ***\<a>*** (ancre ou anchor en anglais) est la balise utilisée pour créer des hyperliens en HTML qui comporte différents attributs 
+
+    - `<a> ... </a>`  
       
   - ***L’attribut href***  
 
-    ```
-    - L’attribut href contient le lien vers lequel vous souhaitez rediriger l’utilisateur
-    
-    - Il peut s’agir
+    - L’attribut href contient le lien vers lequel vous souhaitez rediriger l’utilisateur  
+    - Cet attribut est un attribut essentiel de la balise ***\<a>***  
+    - Il peut s’agir  
       
-          * D’un lien interne vers une autre page du même site web 
-          * Vers une autre section d’une même page web
-          * Un lien externe vers un autre site
-          * Un lien de téléchargement
-          * Un lien de courriel
+        - D’un lien interne vers une autre page du même site web 
+        - Vers une autre section d’une même page web
+        - Un lien externe vers un autre site
+        - Un lien de téléchargement
+        - Un lien de courriel
         
-    - Cet attribut est un attribut essentiel de la balise <a>
     
     - Il peut accueillir n’importe quel schéma d’URL 
           
-          * Si il est pris en charge par les navigateurs web
-    ```  
-
+      - Si il est pris en charge par les navigateurs web
+  
     - ***Créer un lien vers une autre page web***  
 
-        - `<a href="www.google.com">Site Google</a>`  
+      - `<a href="www.google.com">Site Google</a>`  
           
-          - Ne pas oublier de placer l'URL entre guillemets (“”)  
+        - Ne pas oublier de placer l'URL entre guillemets (“”)  
 
     - ***Créer un lien interne***  
 
-        - Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
+      > Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
           
-          - `<a href="Accueil.html">Accueil</a>`  
+      - `<a href="Accueil.html">Accueil</a>`  
 
     - ***Créer un lien vers un endroit de la même page***  
 
-        ```
-        - Cela permet de créer un lien sur un endroit précis d’une page comme une section
-        
-        - C’est ce qui s’appelle créer une ancre. 
-        
-        - Il faut donner un attribut “id” à l’élément que l’on souhaite lier
-        
-        - On va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#)
-        ```
+      - Cela permet de créer un lien sur un endroit précis d’une page comme une section, c'est ce qui s’appelle créer une ancre  
+      
+      - Il faut donner un attribut “id” à l’élément que l’on souhaite lier
+      
+      - On va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#)
+
 
         - Exemple  
         
@@ -326,74 +302,54 @@ __Le HTML coté client__
 
     - ***Créer un lien courriel***  
 
-        - Pour créer un lien courriel, il suffit d’utiliser le schéma d’URL mailto  
+      > Pour créer un lien courriel, il suffit d’utiliser le schéma d’URL mailto  
 
-          - `<a href=”mailto:username@exemple.com”>Contactez-nous</a>`  
+        - `<a href=”mailto:username@exemple.com”>Contactez-nous</a>`  
 
     - ***Créer un lien vers un document***  
 
-        - Pour créer un lien vers un document, il suffit d’ajouter le chemin d’accès vers ce document à l’attribut href du lien  
+      > Pour créer un lien vers un document, il suffit d’ajouter le chemin d’accès vers ce document à l’attribut href du lien  
 
-          - `<a href=”/fichier/doc.pdf”>Fichier_PDF</a>`
+        - `<a href=”/fichier/doc.pdf”>Fichier_PDF</a>`
     
   - L’attribut ***target***  
 
-    ```
-    Il va permettre de préciser au navigateur où ouvrir le lien sur lequel l’utilisateur a cliqué. La façon la plus courante de l’utiliser est en lui passant la valeur “_blank” pour ouvrir le lien dans un nouvel onglet ou dans une nouvelle fenêtre. Cependant, il existe d'autres valeurs possibles pour l'attribut "target", comme "_self" pour ouvrir le lien dans la même fenêtre ou "_parent" pour ouvrir le lien dans le cadre parent de la fenêtre en cours
-    ```
-      - Exemple
-        - `<a href="/HTML/contact.html" target="_blank">Contactez-nous</a>`
+    > Il va permettre de préciser au navigateur où ouvrir le lien sur lequel l’utilisateur a cliqué. La façon la plus courante de l’utiliser est en lui passant la valeur “_blank” pour ouvrir le lien dans un nouvel onglet ou dans une nouvelle fenêtre. Cependant, il existe d'autres valeurs possibles pour l'attribut "target", comme "_self" pour ouvrir le lien dans la même fenêtre ou "_parent" pour ouvrir le lien dans le cadre parent de la fenêtre en cours
+    
+      - `<a href="/HTML/contact.html" target="_blank">Contactez-nous</a>`
 
   - L’attribut ***dowload***  
 
-    ```
-    L'attribut "download" est un élément HTML qui permet à un visiteur de télécharger un fichier associé à une page web
-    ```
-      - Exemple
-        - `<a href=”mon-fichier.pdf” download>Télécharger mon fichier PDF</a>`
+    > L'attribut "download" est un élément HTML qui permet à un visiteur de télécharger un fichier associé à une page web
+
+      - `<a href=”mon-fichier.pdf” download>Télécharger mon fichier PDF</a>`
         
   - L’attribut ***title***  
 
-    ```
-    L'attribut “title” est un attribut universel, c’est-à-dire qu’il est pris en charge par l’ensemble des balises HTML. Néanmoins, il s’avère particulièrement utile associé à la balise <a>. Cet attribut permet de donner des informations supplémentaires sur le lien, qui vont s’afficher sous la forme d’info-bulle lorsque l’utilisateur passera la souris dessus
-    ```
-      - Exemple
-        - `<a href="Taches.html" title="Toutes les taches">Taches à faire</a>`  
+    > L'attribut “title” est un attribut universel, c’est-à-dire qu’il est pris en charge par l’ensemble des balises HTML. Néanmoins, il s’avère particulièrement utile associé à la balise ***\<a>***. Cet attribut permet de donner des informations supplémentaires sur le lien, qui vont s’afficher sous la forme d’info-bulle lorsque l’utilisateur passera la souris dessus
+    
+      - `<a href="Taches.html" title="Toutes les taches">Taches à faire</a>`  
 
----
----
----
----
-
+##
 ## ***__Le multimédia en HTML__***
 
 
   - ***Introduction aux balises multimédia en HTML***  
 
-    ```
-    - Qu’est-ce qu’un fichier multimédia ?  
-
-    - un fichier multimédia est défini comme un fichier informatique qui a la capacité de contenir plusieurs types de médias
-
-    ```  
+    > Qu’est-ce qu’un fichier multimédia ?  
+      > - Un fichier multimédia est défini comme un fichier informatique qui a la capacité de contenir plusieurs types de médias  
 
   - ***Intégrer des images avec les balises \<img> et \<picture>***  
 
-    ```
-    - Il existe 2 méthodes qui permettent d’afficher des fichiers image sur une page web : l’utilisation de la balise <img> et celle de la balise <picture>
-    ```  
+    > Il existe 2 méthodes qui permettent d’afficher des fichiers image sur une page web : l’utilisation de la balise ***\<img>*** et celle de la balise ***\<picture>***
 
     - La balise ***\<img>***  
 
-      ```
       - La balise <img> permet d’intégrer une image à une page web depuis un dossier en local ou depuis une URL spécifique. Il s’agit d’une balise autofermante, qui ne nécessite pas l’utilisation d’une balise de fermeture dédiée  
 
       - Elle prend un attribut obligatoire : l’attribut src, qui sert à spécifier l’URL ou le chemin d’accès vers l’image que l’on souhaite ajouter à notre page web  
 
       - L’attribut alt est un autre attribut courant de la balise <img>. Il permet d’associer un texte à l’image, dit alternatif, qui s’affiche en cas d’erreur de chargement du fichier  
-      ```
-
-      - Exemple  
 
         - `<img src="picture.png” alt=”Img picture”>`  
 
