@@ -132,21 +132,27 @@ __Le HTML coté client__
 
     - Les balises ***\<p>*** sont utilisées en HTML pour délimiter un paragraphe de texte, elle permet d'ajouter des sauts de ligne entre les différents paragraphes  
 
-      - `<p> ... </p>`
+      - `<p> ... </p>`  
 
-- Les balises \<ul> et \<ol>__  
+- Les balises \<ul> et \<ol>  
 
   - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
 
-      - `<ul> ... </ul>`
+      - `<ul> ... </ul>`  
 
     - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
 
-      - `<ol> ... </ol>`
+      - `<ol> ... </ol>`  
 
-      > Ces éléments apportent une structure visuelle à l'information, ce qui est crucial pour la lisibilité de la page  
-
-      > Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale. Pour cela, il faut ajouter une liste imbriquée dans une autre liste, qui sera alors indentée et affichée avec un symbole différent  
+      ```
+      Ces éléments apportent une structure visuelle à l'information
+      ceci qui est crucial pour la lisibilité de la page  
+      ```
+      
+      ```
+      Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale.
+      Il faut ajouter une liste imbriquée dans une autre liste
+      ```
 
     - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
