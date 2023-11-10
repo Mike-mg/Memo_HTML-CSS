@@ -141,41 +141,41 @@ __Le HTML coté client__
 
 - Les balises \<ul> et \<ol>  
 
-  - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
+  > La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
 
-      - `<ul> ... </ul>`  
+    - `<ul> ... </ul>`  
 
-  - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
+  > la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
 
-      - `<ol> ... </ol>`  
+    - `<ol> ... </ol>`  
 
-        - Ces éléments apportent une structure visuelle à l'information  
-        - Ceci qui est crucial pour la lisibilité de la page  
-        - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
+      - Ces éléments apportent une structure visuelle à l'information  
+      - Ceci qui est crucial pour la lisibilité de la page  
+      - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
 
-  - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
+  > Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
-      - Exemple avec la balise ***\<ul>***  
+    - Exemple avec la balise ***\<ul>***  
 
-        ```
-        <ul>  
-        <li> ... </li>  
-        <li> ... </li>  
-        <li> ... </li>  
-        <li> ... </li>  
-        </ul>  
-        ```
+      ```
+      <ul>  
+      <li> ... </li>  
+      <li> ... </li>  
+      <li> ... </li>  
+      <li> ... </li>  
+      </ul>  
+      ```
 
-      - Exemple avec la balise ***\<ol>***  
+    - Exemple avec la balise ***\<ol>***  
 
-        ```
-        <ol>  
-        <li> ... </li>  
-        <li> ... </li>  
-        <li> ... </li>  
-        <li> ... </li>  
-        </ol>  
-        ```
+      ```
+      <ol>  
+      <li> ... </li>  
+      <li> ... </li>  
+      <li> ... </li>  
+      <li> ... </li>  
+      </ol>  
+      ```
 
 - __Les balises block et les balises inline__  
 
