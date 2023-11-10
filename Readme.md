@@ -69,11 +69,11 @@ __Le HTML coté client__
 
     - `<body> ... </body>`  
 
-  ```
-  - Les balises <head> et <body> sont deux autres balises essentielles
-  
-  - Elles s’imbriquent entre la balise d’ouverture <html> et de fermeture </html>
-  ```  
+    ```
+    - Les balises <head> et <body> sont deux autres balises essentielles
+    
+    - Elles s’imbriquent entre la balise d’ouverture <html> et de fermeture </html>
+    ```  
 
 - __Les balises structurelles en HTML__  
 
