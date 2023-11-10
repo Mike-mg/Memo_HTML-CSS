@@ -70,9 +70,9 @@ __Le HTML coté client__
     - `<body> ... </body>`  
 
   ```
-  - Les balises ***\<head>*** et ***\<body>***, sont deux autres balises essentielles
+  - Les balises <head> et <body> sont deux autres balises essentielles
   
-  - Elles viennent s’imbriquer entre la balise d’ouverture ***\<html>*** et la balise de fermeture ***\</html>***
+  - Elles s’imbriquent entre la balise d’ouverture <html> et de fermeture </html>
   ```  
 
 - __Les balises structurelles en HTML__  
@@ -164,24 +164,27 @@ __Le HTML coté client__
 
         - Exemple avec la balise ***\<ul>***  
 
-          > \<ul>  
-          > \<li> ... \</li>  
-          > \<li> ... \</li>  
-          > \<li> ... \</li>  
-          > \<li> ... \</li>  
-          > \</ul>  
+          ```
+          <ul>  
+          <li> ... </li>  
+          <li> ... </li>  
+          <li> ... </li>  
+          <li> ... </li>  
+          </ul>  
+          ```
 
         - Exemple avec la balise ***\<ol>***  
 
-          > \<ol>  
-          > \<li> ... \</li>  
-          > \<li> ... \</li>  
-          > \<li> ... \</li>  
-          > \</ol> 
+          ```
+          <ol>  
+          <li> ... </li>  
+          <li> ... </li>  
+          <li> ... </li>  
+          <li> ... </li>  
+          </ol>  
+          ```
 
----
-
-4. __Les balises block et les balises inline__  
+- __Les balises block et les balises inline__  
 
     - une balise block est une balise qui crée un nouveau bloc de contenu sur la page web. Cela signifie que tout le contenu compris entre la balise d'ouverture et la balise de fermeture sera affiché comme un bloc distinct  
 
@@ -189,9 +192,7 @@ __Le HTML coté client__
 
     - Les balises inline sont souvent utilisées pour formater le texte ou pour ajouter des éléments en ligne, tels que des liens hypertextes, des images ou des boutons. Les exemples les plus courants de balises inline incluent les balises ***\<a>***, ***\<img>***, ***\<span>*** et ***\<button>***  
 
----
-
-5. __Le formatage du texte__  
+- __Le formatage du texte__  
 
     ```
     Lors de la création d'une page web, il est important de considérer la mise en forme
@@ -275,7 +276,21 @@ __Le HTML coté client__
   - ***L’attribut href***  
 
     ```
-    L’attribut href (Hyper Reference) est l’attribut qui contient le lien vers lequel vous souhaitez rediriger l’utilisateur. Il peut s’agir d’un lien interne vers une autre page du même site web ou vers une autre section d’une même page web, d’un lien externe vers un autre site, d’un lien de téléchargement ou encore d’un lien de courriel . Cet attribut est un attribut essentiel de la balise ***\<a>***, il peut accueillir n’importe quel schéma d’URL pris en charge par les navigateurs web
+    - L’attribut href contient le lien vers lequel vous souhaitez rediriger l’utilisateur
+    
+    - Il peut s’agir
+      
+          * D’un lien interne vers une autre page du même site web 
+          * Vers une autre section d’une même page web
+          * Un lien externe vers un autre site
+          * Un lien de téléchargement
+          * Un lien de courriel
+        
+    - Cet attribut est un attribut essentiel de la balise <a>
+    
+    - Il peut accueillir n’importe quel schéma d’URL 
+          
+          * Si il est pris en charge par les navigateurs web
     ```  
 
     - ***Créer un lien vers une autre page web***  
@@ -286,16 +301,20 @@ __Le HTML coté client__
 
     - ***Créer un lien interne***  
 
-        ```
-        Il vous suffit d’insérer dans l’attribut href le chemin d’accès relatif ou absolu vers le document HTML de la page que vous souhaitez lier. Imaginons que vous voulez créer un lien vers une page de contact et que le fichier contact.html se trouve dans le dossier “HTML”
-        ```
-        
-        - `<a href="Accueil.html">Accueil</a>`  
+        - Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
+          
+          - `<a href="Accueil.html">Accueil</a>`  
 
     - ***Créer un lien vers un endroit de la même page***  
 
         ```
-        Il est également possible de créer un lien sur un endroit précis d’une page comme une section ou un article. C’est ce qui s’appelle créer une ancre. Pour cela, il faut commencer par donner un attribut “id” à l’élément que l’on souhaite lier. Puis, on va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#)
+        - Cela permet de créer un lien sur un endroit précis d’une page comme une section
+        
+        - C’est ce qui s’appelle créer une ancre. 
+        
+        - Il faut donner un attribut “id” à l’élément que l’on souhaite lier
+        
+        - On va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#)
         ```
 
         - Exemple  
