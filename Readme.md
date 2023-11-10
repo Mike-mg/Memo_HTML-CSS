@@ -69,7 +69,11 @@ __Le HTML coté client__
 
     - `<body> ... </body>`  
 
-  > Les balises ***\<head>*** et ***\<body>***, qui sont deux autres balises essentielles de tout document HTML, viennent s’imbriquer entre la balise d’ouverture ***\<html>*** et la balise de fermeture ***\</html>***    
+  ```
+  - Les balises ***\<head>*** et ***\<body>***, sont deux autres balises essentielles
+  
+  - Elles viennent s’imbriquer entre la balise d’ouverture ***\<html>*** et la balise de fermeture ***\</html>***
+  ```  
 
 - __Les balises structurelles en HTML__  
 
@@ -121,12 +125,14 @@ __Le HTML coté client__
 
   - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres  
 
-    >\<h1> ... \</h1>  
-    >\<h2> ... \</h2>  
-    >\<h3> ... \</h3>  
-    >\<h4> ... \</h4>  
-    >\<h5> ... \</h5>  
-    >\<h6> ... \</h6>  
+    ```
+    <h1> ... </h1>  
+    <h2> ... </h2>  
+    <h3> ... </h3>  
+    <h4> ... </h4>  
+    <h5> ... </h5>  
+    <h6> ... </h6>  
+    ```  
 
 - __La balise \<p>__  
 
@@ -188,7 +194,8 @@ __Le HTML coté client__
 5. __Le formatage du texte__  
 
     ```
-    Lors de la création d'une page web, il est important de considérer la mise en forme du texte pour une présentation visuellement attrayante et facile à lire. Le HTML offre plusieurs balises qui permettent de mettre en évidence certains mots ou certaines phrases sans avoir recours à un fichier CSS
+    Lors de la création d'une page web, il est important de considérer la mise en forme
+    Le HTML offre plusieurs balises qui permettent de mettre en évidence certains mots
     ```  
 
     - Les balises ***\<b>*** et ***\<strong>*** permettent de faire apparaître le contenu en gras
@@ -250,7 +257,15 @@ __Le HTML coté client__
   - ***Les liens hypertextes***  
 
     ```
-    On appelle lien hypertexte, un élément interactif d’une page web qui permet à l’utilisateur qui clique dessus de naviguer entre différents contenus. Les liens hypertextes peuvent prendre différents formats comme du texte, des images ou encore des boutons
+    - Un lien hypertexte est un élément interactif d’une page web
+
+    - Cela permet à l’utilisateur qui clique dessus de naviguer entre différents contenus
+    
+    - Les liens hypertextes peuvent prendre différents formats commes par exemple
+      
+      * Du texte
+      * Des images
+      * Des boutons
     ```  
 
     - La balise ***\<a>*** (ancre ou anchor en anglais) est la balise utilisée pour créer des hyperliens en HTML qui comporte différents attributs 
