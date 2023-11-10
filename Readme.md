@@ -65,16 +65,13 @@ __Le HTML coté client__
     
     - `<head> ... </head>`  
 
+      - La balise ***\<head>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***
+
   - La balise ***\<body>*** définit l’ensemble des éléments qui vont être visibles sur la page tels que les titres, le texte, les images ou encore les formulaires  
 
     - `<body> ... </body>`  
 
-
-  ```
-  - Les balises <head> et <body> sont deux autres balises essentielles
-
-  - Elles s’imbriquent entre la balise d’ouverture <html> et de fermeture </html>
-  ```  
+      - La balise ***\<body>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***
 
 - __Les balises structurelles en HTML__  
 
@@ -147,7 +144,7 @@ __Le HTML coté client__
 
       - `<ul> ... </ul>`  
 
-    - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
+  - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
 
       - `<ol> ... </ol>`  
 
@@ -161,29 +158,29 @@ __Le HTML coté client__
       Il faut ajouter une liste imbriquée dans une autre liste
       ```
 
-    - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
+  - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
-        - Exemple avec la balise ***\<ul>***  
+      - Exemple avec la balise ***\<ul>***  
 
-          ```
-          <ul>  
-          <li> ... </li>  
-          <li> ... </li>  
-          <li> ... </li>  
-          <li> ... </li>  
-          </ul>  
-          ```
+        ```
+        <ul>  
+        <li> ... </li>  
+        <li> ... </li>  
+        <li> ... </li>  
+        <li> ... </li>  
+        </ul>  
+        ```
 
-        - Exemple avec la balise ***\<ol>***  
+      - Exemple avec la balise ***\<ol>***  
 
-          ```
-          <ol>  
-          <li> ... </li>  
-          <li> ... </li>  
-          <li> ... </li>  
-          <li> ... </li>  
-          </ol>  
-          ```
+        ```
+        <ol>  
+        <li> ... </li>  
+        <li> ... </li>  
+        <li> ... </li>  
+        <li> ... </li>  
+        </ol>  
+        ```
 
 - __Les balises block et les balises inline__  
 
