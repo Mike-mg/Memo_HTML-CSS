@@ -35,13 +35,11 @@ __Le HTML coté client__
 
   - Les balises HTML minimal  
 
-    ```  
-    <!DOCTYPE html>  
-    <html lang="fr">  
-    <head> ... </head>  
-    <body> ... </body>  
-    </html>  
-    ```  
+    `<!DOCTYPE html>`  
+    `<html lang="fr">`  
+    $\qquad$`<head> ... </head>`  
+    $\qquad$`<body> ... </body>`  
+    `</html>`  
 
   - Les balises sont « répétées ». En HTML, la grande majorité des balises fonctionnent par paires et sont composées d’une balise d’ouverture et une balise de fermeture  
 
@@ -77,43 +75,43 @@ __Le HTML coté client__
 
   - La balise ***\<div>***  
 
-    > La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
+    - La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
 
       - `<div> ... </div>`  
 
   - La balise ***\<nav>***  
 
-    > Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site  
+    - Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site  
 
       - `<nav> ... </nav>`  
 
   - La balise ***\<header>***  
 
-    > Dans le ***\<header>***, se compose généralement du titre, d’un texte d’introduction ou encore une bannière, c’est ici que vous placerez les éléments qui permettront d’identifier la thématique de votre page web.  
+    - Dans le ***\<header>***, se compose généralement du titre, d’un texte d’introduction ou encore une bannière, c’est ici que vous placerez les éléments qui permettront d’identifier la thématique de votre page web.  
 
       - `<header> ... </header>`  
 
   - La balise ***\<footer>***  
 
-    > Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise  
+    - Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise  
 
       - `<footer> ... </footer>`  
 
   - La balise ***\<section>***  
 
-    > La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page  
+    - La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page  
       
       - `<section> ... </section>`  
 
   - La balise ***\<article>***  
 
-    > La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires  
+    - La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires  
 
       - `<article> ... </article>`  
 
   - La balise ***\<aside>***  
 
-    > la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes  
+    - la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes  
 
       - `<aside> ... </aside>`  
 
@@ -124,14 +122,12 @@ __Le HTML coté client__
 
   - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres  
 
-    ```
-    <h1> ... </h1>  
-    <h2> ... </h2>  
-    <h3> ... </h3>  
-    <h4> ... </h4>  
-    <h5> ... </h5>  
-    <h6> ... </h6>  
-    ```  
+    `<h1> ... </h1>`  
+    `<h2> ... </h2>`  
+    `<h3> ... </h3>`  
+    `<h4> ... </h4>`  
+    `<h5> ... </h5>`  
+    `<h6> ... </h6>`  
 
 - __La balise \<p>__  
 
@@ -141,11 +137,11 @@ __Le HTML coté client__
 
 - Les balises \<ul> et \<ol>  
 
-  > La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
+  - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
 
     - `<ul> ... </ul>`  
 
-  > la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
+  - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
 
     - `<ol> ... </ol>`  
 
@@ -153,29 +149,25 @@ __Le HTML coté client__
       - Ceci qui est crucial pour la lisibilité de la page  
       - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
 
-  > Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
+  - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
     - Exemple avec la balise ***\<ul>***  
 
-      ```
-      <ul>  
-      <li> ... </li>  
-      <li> ... </li>  
-      <li> ... </li>  
-      <li> ... </li>  
-      </ul>  
-      ```
+      `<ul>`  
+      $\qquad$`<li> ... </li>`  
+      $\qquad$`<li> ... </li>`  
+      $\qquad$`<li> ... </li>`  
+      $\qquad$`<li> ... </li>`  
+      `</ul>`
 
     - Exemple avec la balise ***\<ol>***  
 
-      ```
-      <ol>  
-      <li> ... </li>  
-      <li> ... </li>  
-      <li> ... </li>  
-      <li> ... </li>  
-      </ol>  
-      ```
+      `<ol>`  
+      $\qquad$`<li> ... </li>`  
+      $\qquad$`<li> ... </li>`  
+      $\qquad$`<li> ... </li>`  
+      $\qquad$`<li> ... </li>`  
+      `</ol>`  
 
 - __Les balises block et les balises inline__  
 
@@ -187,7 +179,7 @@ __Le HTML coté client__
 
 - __Le formatage du texte__  
 
-    > Lors de la création d'une page web, il est important de considérer la mise en forme, le HTML a plusieurs balises qui permettent de mettre en évidence certains mots ou texte
+    - Lors de la création d'une page web, il est important de considérer la mise en forme, le HTML a plusieurs balises qui permettent de mettre en évidence certains mots ou texte
 
     - Les balises ***\<b>*** et ***\<strong>*** permettent de faire apparaître le contenu en gras
 
@@ -279,7 +271,7 @@ __Le HTML coté client__
 
     - ***Créer un lien interne***  
 
-      > Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
+      - Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
           
       - `<a href="Accueil.html">Accueil</a>`  
 
@@ -294,71 +286,148 @@ __Le HTML coté client__
 
         - Exemple  
         
-          ```
-          <section id="projects"> ... \</section>
-          ```
+          > `<section id="projects"> ... \</section>`  
           
           - `<a href="#projects">Découvrez nos réalisations</a>`  
 
     - ***Créer un lien courriel***  
 
-      > Pour créer un lien courriel, il suffit d’utiliser le schéma d’URL mailto  
+      - Pour créer un lien courriel, il suffit d’utiliser le schéma d’URL mailto  
 
         - `<a href=”mailto:username@exemple.com”>Contactez-nous</a>`  
 
     - ***Créer un lien vers un document***  
 
-      > Pour créer un lien vers un document, il suffit d’ajouter le chemin d’accès vers ce document à l’attribut href du lien  
+      - Pour créer un lien vers un document, il suffit d’ajouter le chemin d’accès vers ce document à l’attribut href du lien  
 
         - `<a href=”/fichier/doc.pdf”>Fichier_PDF</a>`
     
   - L’attribut ***target***  
 
-    > Il va permettre de préciser au navigateur où ouvrir le lien sur lequel l’utilisateur a cliqué. La façon la plus courante de l’utiliser est en lui passant la valeur “_blank” pour ouvrir le lien dans un nouvel onglet ou dans une nouvelle fenêtre. Cependant, il existe d'autres valeurs possibles pour l'attribut "target", comme "_self" pour ouvrir le lien dans la même fenêtre ou "_parent" pour ouvrir le lien dans le cadre parent de la fenêtre en cours
+    - Il va permettre de préciser au navigateur où ouvrir le lien sur lequel l’utilisateur a cliqué. La façon la plus courante de l’utiliser est en lui passant la valeur “_blank” pour ouvrir le lien dans un nouvel onglet ou dans une nouvelle fenêtre. Cependant, il existe d'autres valeurs possibles pour l'attribut "target", comme "_self" pour ouvrir le lien dans la même fenêtre ou "_parent" pour ouvrir le lien dans le cadre parent de la fenêtre en cours
     
       - `<a href="/HTML/contact.html" target="_blank">Contactez-nous</a>`
 
   - L’attribut ***dowload***  
 
-    > L'attribut "download" est un élément HTML qui permet à un visiteur de télécharger un fichier associé à une page web
+    - L'attribut "download" est un élément HTML qui permet à un visiteur de télécharger un fichier associé à une page web
 
       - `<a href=”mon-fichier.pdf” download>Télécharger mon fichier PDF</a>`
         
   - L’attribut ***title***  
 
-    > L'attribut “title” est un attribut universel, c’est-à-dire qu’il est pris en charge par l’ensemble des balises HTML. Néanmoins, il s’avère particulièrement utile associé à la balise ***\<a>***. Cet attribut permet de donner des informations supplémentaires sur le lien, qui vont s’afficher sous la forme d’info-bulle lorsque l’utilisateur passera la souris dessus
+    - L'attribut “title” est un attribut universel, c’est-à-dire qu’il est pris en charge par l’ensemble des balises HTML. Néanmoins, il s’avère particulièrement utile associé à la balise ***\<a>***. Cet attribut permet de donner des informations supplémentaires sur le lien, qui vont s’afficher sous la forme d’info-bulle lorsque l’utilisateur passera la souris dessus
     
       - `<a href="Taches.html" title="Toutes les taches">Taches à faire</a>`  
 
 ##
 ## ***__Le multimédia en HTML__***
 
-
   - ***Introduction aux balises multimédia en HTML***  
 
-    > Qu’est-ce qu’un fichier multimédia ?  
-      > - Un fichier multimédia est défini comme un fichier informatique qui a la capacité de contenir plusieurs types de médias  
+    - Qu’est-ce qu’un fichier multimédia ?  
+      - Un fichier multimédia est défini comme un fichier informatique qui a la capacité de contenir plusieurs types de médias  
 
   - ***Intégrer des images avec les balises \<img> et \<picture>***  
 
-    > Il existe 2 méthodes qui permettent d’afficher des fichiers image sur une page web : l’utilisation de la balise ***\<img>*** et celle de la balise ***\<picture>***
+    - Il existe 2 méthodes qui permettent d’afficher des fichiers image sur une page web : l’utilisation de la balise ***\<img>*** et celle de la balise ***\<picture>***
 
     - La balise ***\<img>***  
 
-      - La balise <img> permet d’intégrer une image à une page web depuis un dossier en local ou depuis une URL spécifique. Il s’agit d’une balise autofermante, qui ne nécessite pas l’utilisation d’une balise de fermeture dédiée  
+      - La balise ***\<img>*** permet d’intégrer une image à une page web depuis un dossier en local ou depuis une URL spécifique. Il s’agit d’une balise autofermante, qui ne nécessite pas l’utilisation d’une balise de fermeture dédiée  
 
       - Elle prend un attribut obligatoire : l’attribut src, qui sert à spécifier l’URL ou le chemin d’accès vers l’image que l’on souhaite ajouter à notre page web  
 
-      - L’attribut alt est un autre attribut courant de la balise <img>. Il permet d’associer un texte à l’image, dit alternatif, qui s’affiche en cas d’erreur de chargement du fichier  
+      - L’attribut alt est un autre attribut courant de la balise ***\<img>***. Il permet d’associer un texte à l’image, dit alternatif, qui s’affiche en cas d’erreur de chargement du fichier  
 
         - `<img src="picture.png” alt=”Img picture”>`  
 
     - La balise ***\<picture>***  
 
-      ```
+      - Elle va permettre de définir plusieurs sources, c’est-à-dire plusieurs images différentes  
+      
+      - Chaque image est définie dans une balise ***\<source>*** contenue dans la balise ***\<picture>***  
 
-      ```
+      - Chaque image s’affiche si, et seulement si, elle remplit certaines conditions qui sont définies grâce aux attributs de la balise ***\<source>***  
 
-      - Exemple  
+        Exemple  
 
-        - ``
+          `<picture>`  
+          $\qquad$`<source media="(min-width:1200px)" srcset="grande-image.jpg">`  
+          $\qquad$`<source media="(min-width:800px)" srcset="image-moyenne.jpg">`  
+          $\qquad$`<img src="petit-image.jpg" alt="Flowers" style="width:auto;">`  
+          `</picture>`  
+
+      - La balise ***\<source>*** nous permet de définir dans l’attribut srcset les sources des différentes images  
+
+      - L’attribut ***media*** sert à spécifier les tailles d’écran à utiliser pour les images  
+        
+        - Si l'écran a une largeur supérieure à 1 200px, la page web affichera le fichier « grande-image.jpg »  
+
+        - Si l’écran a une largeur comprise entre 800px et 1200px, alors l’image « image-moyenne.jpg » sera affichée  
+
+        - Si l'écran a une largeur inférieure à 800px, la source choisie sera le fichier « petit-image.jpg »
+
+        > Les formats AVIF et WebP sont les formats qui offrent les meilleures performances, ils optimisent la vitesse de chargement des images et donc de la page web
+
+    - La balise ***\<video>***  
+
+      - La balise ***\<video>*** permet de partager du contenu de manière ludique et immersive, assure une meilleure compréhension de l’information en la rendant dynamique  
+
+        - `<video src=”./assets/mavideo.mp4” controls>`  
+
+      - Elle peut être utilisée seule ou couplée avec la balise ***\<source>***, si il est est nécessaire de définir plusieurs sources vidéo en fonction des préférences de l’utilisateur ou pour maximiser la compatibilité avec les différents navigateurs  
+
+        `<video controls>`  
+        $\qquad$`<source  src=”./assets/mavideo.webm” type=”video/webm”>`  
+        $\qquad$`<source  src=”./assets/mavideo.mp4” type=”video/mp4”>`  
+        `</video>`  
+        
+      - L’attribut ***controls*** permet d’afficher les options de contrôle de la vidéo : le bouton de lecture, de pause et de gestion du volume audio  
+
+      - Un attribut ***type***, va permettre de préciser au navigateur le type de fichier dont il s’agit (ici, une vidéo) et le format de ce fichier (dans notre exemple, un fichier mp4 et un fichier webM)
+      
+    - La balise ***\<audio>***  
+
+      - La balise ***\<audio>***, permet l’immersion de l’utilisateur avec la possibilité d’intégrer de l’audio à votre page web. la balise présente les mêmes caractéristiques d’utilisation que la balise ***\<video>***  
+
+        - `<audio controls src=”./assets/mon-audio.mp3”>`  
+
+      - Avec plusieurs sources  
+
+        - `<audio controls>`  
+        $\qquad$`<source src="audio.mp3" type="audio/mpeg">`  
+        $\qquad$`<source src="audio.ogg" type="audio/ogg">`  
+        $\qquad$`<source src="audio.wav" type="audio/wav">`  
+        `</audio>`  
+
+      - Nous allons préférer l’utilisation de fichiers MP3 pour optimiser la compatibilité avec l’ensemble des navigateurs web  
+
+  - ***les balises de contenu intégré***  
+
+    - La balise ***\<iframe>***  
+
+      - Cette balise permet d’intégrer à la page web du contenu externe qui sera traité de manière totalement indépendante  
+
+        - `<iframe width="560" height="315" src="source_vers_contenu">Video</iframe>`  
+
+    - La balise ***\<embed>***  
+
+      - Cette permet également d’intégrer du contenu externe à la page web. la différence c’est que la balise ***\<embed>*** est surtout utilisée pour l’intégration de plug-ins  
+
+        - `<embed src="mon_fichier.pdf" width="500" height="375" type="application/pdf">`  
+
+    - La balise ***\<object>***  
+
+      - Les balises ***\<iframe>*** et ***\<embed>*** permettent d’intégrer une grande variété de contenus PDF, SVG, plug-ins, applets et évidemment des fichiers multimédia  
+      
+      - La balise ***\<object>*** offre une plus grande flexibilité et une plus grande compatibilité de son contenu avec l’ensemble des navigateurs  
+
+        - `<object data="snippet.html" width="500" height="200">Object</object>`  
+
+          - L’attribut ***data*** fonctionne de manière similaire à l’attribut src et accueille le chemin d’accès de la ressource externe à intégrer à la page web  
+
+      - la balise ***\<object>*** vous permet d’intégrer, de manière flexible et en assurant une compatibilité maximale, une grande variété de contenus externes à votre page web, tout en offrant une alternative pour les navigateurs qui ne prennent pas en charge le contenu intégré  
+
+##
+## ***__en cours__***
