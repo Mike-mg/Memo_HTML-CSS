@@ -4,25 +4,25 @@
 
 __Qu’est-ce que le HTML ?__  
 
-  - Le HTML ( HyperText Markup Language ), est utilisé pour mettre en page un site web  
+- Le HTML ( HyperText Markup Language ), est utilisé pour mettre en page un site web  
 
-    - [Lien vers la page des références des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
+  - [Lien vers la page des références des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 
 __Le W3C__  
 
-  - Le W3C ( Wolrd wide Web Consortium ), est l’organisme chargé de la standardisation et de la compatibilité des technologies du web  
+- Le W3C ( Wolrd wide Web Consortium ), est l’organisme chargé de la standardisation et de la compatibilité des technologies du web  
 
-    - [Site du W3C](https://www.w3.org/)  
+  - [Site du W3C](https://www.w3.org/) <a id="W3C"></a>
 
 __Le HTML coté client__  
 
-  - Le « côté client » couvre toutes les opérations effectuées par une application ou un site web au sein d’un navigateur  
+- Le « côté client » couvre toutes les opérations effectuées par une application ou un site web au sein d’un navigateur  
 
-  - Le langage HTML est donc un langage « côté client ». C’est le navigateur de l’utilisateur qui interprète le HTML  
+- Le langage HTML est donc un langage « côté client ». C’est le navigateur de l’utilisateur qui interprète le HTML  
 
-  - Les pages d’un site web sont transmises sous forme de code HTML brut au navigateur, qui va l’interpréter pour afficher son contenu sur l’écran  
+- Les pages d’un site web sont transmises sous forme de code HTML brut au navigateur, qui va l’interpréter pour afficher son contenu sur l’écran  
 
-  - Cette partie du développement d’un site web est appelée « développement frontend », faisant référence à la partie création de l’interface utilisateur, au côté visuel d’un site ou d’une application web. HTML sert à définir la structure et l’organisation des pages  
+- Cette partie du développement d’un site web est appelée « développement frontend », faisant référence à la partie création de l’interface utilisateur, au côté visuel d’un site ou d’une application web. HTML sert à définir la structure et l’organisation des pages  
 
 ##
 ## ***__Syntaxe générale de HTML__***  
@@ -51,6 +51,7 @@ __Le HTML coté client__
 - __Desciption de la syntaxe des balises HTML minimal__  
 
   - Le code HTML commence toujours avec la balise suivante  
+
     - `<!DOCTYPE html>`  
 
       - Cette balise permet de spécifier au navigateur le type de document HTML utilisé. Il est donc crucial de toujours inclure cette balise au début de votre code HTML  
@@ -430,4 +431,199 @@ __Le HTML coté client__
       - la balise ***\<object>*** vous permet d’intégrer, de manière flexible et en assurant une compatibilité maximale, une grande variété de contenus externes à votre page web, tout en offrant une alternative pour les navigateurs qui ne prennent pas en charge le contenu intégré  
 
 ##
-## ***__en cours__***
+## ***__Introduction au CSS__***
+
+- ***Bases de CSS***  
+
+  - Origine du CSS  
+
+    - CSS (Cascading Style Sheets), permet de définir des styles pour différents éléments HTML, XHTML ou XML tels que les polices de caractères, les couleurs, les marges, les bordures, les images, les dimensions de blocs, soit tout élément que le navigateur web  
+
+  - Intérêt et avantage des CSS  
+
+    - L'utilisation du CSS permet de faciliter grandement la maintenance et la mise à jour d’un site, mais il aide également à améliorer l'accessibilité pour les personnes en situation de handicap  
+
+    - Il est possible de personnaliser l’affichage de chaque élément HTML depuis le navigateur  
+
+    - L'utilisation des CSS est donc essentielle pour un site web esthétique et confortable à lire  
+
+  - Fonctionnement et syntaxe des CSS  
+
+    - CSS est un langage basé sur des règles destinées à des éléments HTML ou des groupes d’éléments HTML  
+
+      ```
+      /* Ceci est un commentaire non interprété par le navigateur */
+
+      /* le sélecteur de titre h1 */
+      h1 {
+        /* propriété : valeur */
+        font-size: 20px;
+        color: blue;
+      }
+
+      /* le sélecteur de paragraphe p */
+      p {
+        text-align: justify;
+        color: red;
+      }
+      ```  
+
+        - Ces règles contiennent un sélecteur, l’élément HTML h1 et l’élément p. On ouvre une accolade où l’on va définir une ou plusieurs déclarations sous la forme d’une paire  
+          
+          - propriété : valeur
+
+        - Dans l’exemple avec l’élément h1, la première déclaration contient la propriété font-size qui indique la taille de la police de caractères, ayant pour valeur 20px dont l’unité est le pixel  
+        
+        - La seconde déclaration, color a pour valeur blue, la couleur bleue. L’élément HTML p a un texte justifié, aligné sur les marges gauche et droite et il a une couleur rouge  
+        
+        - Le point-virgule sert de séparateur entre les différentes déclarations.
+
+  - Lier CSS au document HTML  
+
+    - La feuille de style externe est la méthode la plus utilisée pour la présentation des pages web, car elle présente de nombreux avantages  
+
+      - Elle permet une définition unique des styles, qui peut être appliquée à toutes les pages du site  
+
+      - La modification de la feuille de style externe permet une mise à jour facile et rapide de la présentation de toutes les pages du site  
+
+      - l'utilisation d'une feuille de style externe offre une solution efficace et pratique pour la gestion des styles de présentation sur un site web, permettant de garantir une cohérence globale et une maintenance aisée des pages  
+
+      - L’en-tête de la page contient une référence vers le fichier style.css. Cette référence s’effectue à l’aide de la balise ***<link>*** dans la section ***<head>***. L’attribut rel de l’élément link spécifie que le lien est une feuille de style
+
+        - Exemple
+
+          - `<link rel=”stylesheet” href=”styles/style.css”>`  
+
+  - Organisation et nommage des fichiers dans un site web  
+
+    - Il est utile de structurer et séparer intelligemment les fichiers CSS de manière à ce qu’ils aient un rôle bien distinct, par exemple  
+
+      | Fichier CSS     | Rôle                                                                |  
+      | :-------------: | :-----------------------------------------------------------------: |  
+      | style.css       | Styles communs à toutes les pages                                   |  
+      | layout.css      | Styles de la mise en page générale de toutes les pages              |  
+      | header.css      | Styles pour l’en-tête commun à toutes les pages                     |  
+      | footer.css      | Styles pour le pied de page commun à toutes les pages               |  
+      | menu.css        | Styles pour le menu commun à toutes les pages                       |  
+      | pageX.css       | Styles spécifiques à une page ou un groupe de pages                 |  
+      | slider.css      | Styles spécifiques au carrousel d’images commun à toutes les pages  |  
+    
+      - En structurant et en séparant intelligemment vos fichiers CSS de cette manière, vous pouvez aisément comprendre et gérer les styles de votre site web. Cela peut également faciliter la maintenance et les mises
+
+- ***Mise en œuvre des CSS***  
+
+  - Utilisation des classes  
+
+    - Les classes sont attribuées à chaque élément HTML, une ou plusieurs classes dont vous avez le loisir de choisir un nom. L’avantage des classes est que vous pouvez cibler n’importe quel élément HTML qui contient la classe comme attribut  
+
+    - Il est important de respecter certaines conventions. La syntaxe d'écriture des classes doit être réalisée avec des caractères alphanumériques uniquement  
+    
+      - Les lettres (a-z, A-Z)
+      - Les chiffres (0-9)
+      - Le tiret (-)
+      - Le trait de soulignement ou underscore (_)  
+
+    - Il est recommandé d’éviter les noms de classes génériques tels que « div » ou « container », ils peuvent entraîner des conflits avec d’autres classes ou éléments HTML  
+    
+    - Il est également déconseillé de commencer le nom d’une classe par un chiffre, car certains navigateurs peuvent interpréter cela comme une erreur de syntaxe  
+
+    - Les classes sont dites « case-sensitive » (sensibles à la casse), cela signifie que si vous utilisez une classe appelée « maClasse » dans la feuille de style et que dans la page HTML, vous l’écrivez « maclasse », cette dernière ne sera pas reconnue  
+
+  - Utilisation des ID  
+
+    - Lorsqu'on travaille avec les éléments HTML en CSS, il est possible de leur attribuer un identifiant, ou ID, en plus ou à la place des classes. Les IDs fonctionnent de manière similaire aux classes, en ce sens qu'on peut leur appliquer des styles. Toutefois, il existe certaines différences importantes entre les deux  
+
+      - La première différence est que chaque élément HTML ne peut avoir qu'un seul ID, et cet ID doit être unique dans une page HTML. Alors que plusieurs éléments HTML peuvent partager une même classe  
+
+      - La deuxième différence majeure entre les IDs et les classes est que les règles CSS qui utilisent un ID ont la priorité sur les règles qui utilisent une classe. Cela signifie que si un même élément HTML possède à la fois un ID et une classe, les styles appliqués à l'ID auront la priorité sur les styles appliqués à la classe  
+
+      - Les IDs sont utilisés pour cibler des éléments HTML spécifiques sur lesquels on veut effectuer des actions particulières, souvent avec JavaScript. Pour créer un ID, on utilise le dièse (#) suivi du nom de l'ID  
+
+    - Les ID ont la priorité sur les classes. Ainsi, lorsque les attributs ID et classe sont utilisés sur le même élément HTML, c’est l’ID qui applique son style en priorité, indépendamment de l'ordre dans lequel les attributs sont déclarés  
+
+      - L'ID est sensible à la casse, tout comme les classes. La syntaxe d'écriture d'un ID est la même que celle des classes  
+
+  - Fonctionnement de l’héritage  
+
+    - Les styles fonctionnent par héritage, ce qui signifie que les règles de styles se combinent et se transmettent de parents à enfants. Cette notion est importante avant de passer à la création d’un site web  
+
+  - Mécanisme de cascade et de spécificité  
+
+    - Les sélecteurs CSS sont des instructions utilisées pour cibler des éléments HTML et leur appliquer un style. Lorsque plusieurs sélecteurs s’appliquent à un même élément, CSS repose sur un ensemble de règles qui vont définir l’ordre de préférence d’application des propriétés déclarées dans les sélecteurs  
+
+    - Plus un sélecteur est spécifique, plus sa priorité sera élevée. Par exemple, un sélecteur qui cible un élément par son identifiant (#) est plus spécifique qu'un sélecteur qui cible un élément par sa classe (.), et aura donc une priorité plus élevée. Si deux sélecteurs ont la même spécificité, la règle la plus importante aura la priorité. Les règles importantes ont une priorité plus élevée que les règles non importantes  
+
+    - Une liste d'exemple de principaux sélecteurs par ordre de priorité
+
+        | Sélecteur             | Exemple                       | Priorité        |  
+        | :-------------------: | :---------------------------: | :-------------: |  
+        | Style en ligne        | \<p style="... !important">   | La plus élevée  |  
+        | Style en ligne        | \<p style="...">              |                 |  
+        | Sélecteur ID          | #id { ... }                   |                 |  
+        | Sélecteur de classe   | .class { ... }                |                 |  
+        | Sélecteur d’élément   | p.class { ... }               |                 |  
+        | Sélecteur d’élément   | p { ... }                     | La plus basse   |  
+
+        - Il est important de noter que l'utilisation excessive de règles importantes ou de sélecteurs spécifiques peut rendre le code CSS difficile à maintenir et à comprendre
+
+  - Mise en forme appliquée sur l’état  
+
+    - Lorsque l'on souhaite appliquer des règles CSS à des éléments HTML en fonction de leur état, plusieurs possibilités existent, Un exemple parfait pour illustrer cette méthode est celui des liens, ou ancres, représentés par la balise ***\<a>***  
+
+      - L'état " visited " s'applique lorsque le lien a été visité précédemment par l'utilisateur  
+        
+        ```
+        a:visited {
+          color: grey;
+        }
+        ```
+
+      - L'état " active " s'active lorsque l'utilisateur est en train de cliquer sur le lien  
+        
+        ```
+        a:active {
+        color: black;
+        }
+        ```
+
+      - L'état " hover " s'applique lorsque le curseur de la souris survole le lien  
+        
+        ```
+        a:hover {
+        color: red;
+        text-decoration: none;
+        }
+        ```
+
+      - L'état " focus " est activé lorsque le curseur du clavier est positionné sur le lien, généralement en utilisant la touche " tab "  
+        
+        ```
+        a:focus {
+        font-size: 15px;
+        color: green;
+        }
+        ```
+
+    - Nombreuses autres balises HTML sont assujetties à l’utilisation des états dont voici une liste non exhaustive : ***\<button>***, ***\<input>***, ***\<label>***, ***\<div>***, ***\<span>***, ***\<ul>***, ***\<li>***, ***\<img>***. En utilisant des sélecteurs CSS appropriés, il est possible de personnaliser l'apparence de ces éléments en fonction de leur état, pour une expérience utilisateur plus agréable et plus intuitive  
+
+  - Ressources et informations  
+
+    - Les CSS sont une norme ouverte et publique développée par le World Wide Web Consortium (W3C), qui est un groupe constitué de représentants des éditeurs de navigateurs et de quelques autres sociétés concernées par les CSS  
+
+      - [La page d’accueil des CSS du W3C](#W3C)
+
+        - Quelques liens utiles
+
+          - [La page d’accueil des CSS de MDN](https://developer.mozilla.org/fr/docs/Learn/CSS)
+          - [W3Schools](https://www.w3schools.com/)
+          - [CSS-Tricks](https://css-tricks.com/)
+          - [CSS Reference](https://cssreference.io/)
+
+    - Il est important de noter que les navigateurs ne réagissent pas tous de la même manière sur certaines fonctionnalités CSS, et ceci, indépendamment du système d’exploitation. Il est donc essentiel de vérifier la compatibilité des propriétés, soit sur MDM Web Docs de Mozilla ou le site Can I use dédié à cette tâche
+    
+      - [Can I use](https://caniuse.com/)
+
+
+
+
+
