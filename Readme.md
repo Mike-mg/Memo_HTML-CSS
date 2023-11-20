@@ -289,7 +289,7 @@
             
             - `<a href="Accueil.html">Accueil</a>`  
 
-        - Créer un lien vers un endroit de la même page 
+        - Créer un lien vers un endroit de la même page <a id="ancre"></a>
 
           - Cela permet de créer un lien sur un endroit précis d’une page comme une section, c'est ce qui s’appelle créer une ancre  
           
@@ -492,7 +492,7 @@
 
         - Ces règles contiennent un sélecteur, l’élément HTML h1 et l’élément p. On ouvre une accolade où l’on va définir une ou plusieurs déclarations sous la forme d’une paire  
           
-          - propriété : valeur
+          - ***propriété : valeur***
 
         - Dans l’exemple avec l’élément h1, la première déclaration contient la propriété font-size qui indique la taille de la police de caractères, ayant pour valeur 20px dont l’unité est le pixel  
         
@@ -559,7 +559,7 @@
 
       - La deuxième différence majeure entre les IDs et les classes est que les règles CSS qui utilisent un ID ont la priorité sur les règles qui utilisent une classe. Cela signifie que si un même élément HTML possède à la fois un ID et une classe, les styles appliqués à l'ID auront la priorité sur les styles appliqués à la classe  
 
-      - Les IDs sont utilisés pour cibler des éléments HTML spécifiques sur lesquels on veut effectuer des actions particulières, souvent avec JavaScript. Pour créer un ID, on utilise le dièse (#) suivi du nom de l'ID  
+      - Les IDs sont utilisés pour cibler des éléments HTML spécifiques sur lesquels on veut effectuer des actions particulières, souvent avec JavaScript. Pour créer un ID, on utilise le dièse (#) suivi du nom de l'ID  [Voir exemple](#ancre)
 
     - Les ID ont la priorité sur les classes. Ainsi, lorsque les attributs ID et classe sont utilisés sur le même élément HTML, c’est l’ID qui applique son style en priorité, indépendamment de l'ordre dans lequel les attributs sont déclarés  
 
@@ -652,9 +652,9 @@
 
   - #### Différents types de propriétés  
 
-    - Les CSS permettent de personnaliser l'apparence du texte selon les besoins et les préférences de l'utilisateur. Les éléments de mise en forme comprennent la police, la taille, la couleur, le soulignement, le surlignage, l'alignement et la justification, ainsi que l'ajout d'espaces et d'interlignes  
-
-    - La mise en forme de texte est donc un élément clé de la conception web, permettant de créer des pages web visuellement attrayantes et faciles à lire  
+    - Les CSS permettent de personnaliser l'apparence du texte  
+    
+    - Les éléments de mise en forme comprennent la police, la taille, la couleur, le soulignement, le surlignage, l'alignement et la justification, ainsi que l'ajout d'espaces et d'interlignes  
 
       | Proprietes                  | Exemple                       | Notes                                                             |
       | :-------------------------: | :---------------------------: |:----------------------------------------------------------------: |
@@ -666,18 +666,471 @@
 
   - #### Couleurs  
 
+    - La propriété ***color*** ajoute des couleurs dans les textes  
+
+    - Les methodes de la notation en hexadécimale et la notation RGB sont les plus optimisés car elles peuvent représenter 16,7 millions de couleurs  
+
+      | Proprietes    | Exemple         | Notes                                                                                                                                                   |
+      | :-----------: | :-------------: |:------------------------------------------------------------------------------------------------------------------------------------------------------: |
+      | Mots-clés     | blue            | C’est une référence qui pointe sur une couleur, Il existe 147 noms prédéfinis en anglais                                                                |
+      | Hexadécimale  | #0000FF         | Un dièse suivi de 3 paires de digits indiquant respectivement la quantité de rouge, de vert et de bleu                                                  |
+      | RGB           | rgb(0, 0, 255)  | La valeur est représentée en 3 couleurs décimales, indiquant respectivement la quantité de rouge, de vert et de bleu. Ces proportions allant de 0 à 255 |  
+
+        - Exemple
+
+          ```          
+          .keyword {
+          color: red;
+          }
+
+          /* Rouge = FF, Vert = 00, Bleu = 00 */  
+          .hexa {  
+          color: #FF0000;
+          }
+
+          .rgb {
+          color: rgb(255, 0, 0);
+          }          
+          ```
+
+
   - #### Propriétés dédiées aux polices de caractères FONT-*  
 
+    - La propriété ***font-family*** sert à définir une police de caractères. Elle se présente sous la forme d’une liste de noms de polices ***séparées par une virgule***, et ***classées par ordre de préférence***  
+
+      - Pour assurer une bonne interprétation des polices génériques par les navigateurs, il est recommandé de les mentionner en dernière position après les noms de polices spécifiques  
+
+        - ***Il est important de noter que les noms de polices composés de plusieurs mots doivent être placés entre guillemets comme pour la police "Times New Roman"***  
+
+          - ***Il existe quelques polices de caractères génériques communes sur les navigateurs internet telles que “Serif”, “Sans-serif”, “Monospace”, “cursive”, “fantasy”, “system-ui”, “emoji”, “math” et “fangsong”, car elles sont installées sur la plupart des ordinateurs. Les polices génériques doivent être utilisées en dernière position dans la liste de font-family***  
+
+          - Exemple  
+
+            ```
+            .famille1 {
+            font-family: Futura, Verdana, sans-serif;
+            }
+
+            .famille2 {
+              font-family: "Times new roman", Times, serif;
+            }
+            
+            .famille3 {
+              font-family: "Courier New", Courier, monospace;
+            }
+
+            ```
+
+    - La propriété ***font-weight*** offre la possibilité de modifier l’épaisseur ou la graisse d’une police  
+
+      - La valeur par défaut est normal, qui est le poids de police standard  
+
+      - Il existe plusieurs autres valeurs possibles pour cette propriété, telles que ***lighter*** ou ***bolder*** qui définit la graisse d’un cran moins gras ou plus gras que son parent  
+
+        - Il est important de retenir que la valeur ***400*** est équivalente à ***normal*** et la valeur ***700*** est équivalente à ***bold***  
+
+        - Exemple  
+
+          ```
+          /* Arial accepte facilement plusieurs graisses */
+          p {
+          font-family: arial;
+          }
+
+          /* similaire à font-weight: 400 */
+          .texte-normal {
+          font-weight: normal;
+          }
+
+          /* similaire à font-weight: 700 */
+          .texte-gras {
+          font-weight: bold;
+          }
+
+          .texte-tres-gras {
+          font-weight: 900;
+          }
+          ```
+
+    - La propriété ***font-size*** permet de modifier la taille des polices, Cette propriété comprend 4 types de valeurs, telles que la longueur, le mot-clé, le pourcentage et la globale  
+
+      - La valeur spécifiée par longueur peut être exprimée en plusieurs unités, nous utiliserons ici le ***px*** (pixels)
+
+      - La valeur par mot-clé correspond à des valeurs prédéfinies, il en existe 8. Par exemple “xx-small” correspond à la moitié de la taille par défaut du navigateur, ou encore “large” correspond à 10 % de plus. La valeur en pourcentage donne une proportionnalité par rapport à la valeur de l’élément parent, et enfin la valeur globale qui permet de gérer l’héritage ou la réinitialisation comme par exemple “inherit”, “initial”, “revert” et “unset”  
+
+      - Exemple  
+
+        ```
+        body {
+        font-family: Arial;
+
+        /* Taille absolue */
+        font-size: 12px;
+        }
+
+        p {
+        margin: 0;
+        }
+
+        /* Tailles relatives au parent, ici le body à 12px */
+        .p1 {
+        font-size: smaller;
+        }
+
+        .p2 {
+        font-size: larger; 
+        }
+        
+        /* Tailles par mots-clés dépendants des paramètres du navigateur */
+        .p3 {
+        font-size: xx-small;
+        } /* 50% */
+        
+        .p4 {
+        font-size: x-small;
+        } /* 75% */
+        
+        .p5 {
+        font-size: small;
+        } /* 85% */
+        
+        .p6 {
+        font-size: medium; 
+        } /* 100% */
+        
+        .p7 {
+        font-size: large;
+        } /* 120% */
+        
+        .p8 {
+        font-size: x-large;
+        } /* 150% */
+        
+        .p9 {
+        font-size: xx-large; 
+        } /* 200% */
+
+        .p10 {
+        font-size: xxx-large;
+        } /* 400% */
+        
+        /* tailles en pourcentage, proportionnelles au parent, donc le body */
+        .p11 {
+        font-size: 70%;
+        }
+        
+        .p12 {
+        font-size: 150%; 
+        } /* ignore l'héritage, prends la valeur par défaut du navigateur */
+        
+        .p13 {
+        font-size: initial;
+        }
+        ```
+
+    - La propriété ***font-style*** permet de modifier l’inclinaison des polices. Cette propriété comprend 2 types de valeurs, telles que le mot-clé et la globale  
+
+      - La valeur spécifiée par mot-clé correspond à deux valeurs prédéfinies, “italic” et “oblique”  
+      
+      - À la différence d’”italic”, “oblique” force la police à se rendre italique même si elle n’a pas été conçue pour cela  
+      
+      - La valeur globale qui permet de gérer l’héritage ou la réinitialisation comme à travers ***“inherit”***, ***“initial”***, ***“revert”*** et ***“unset”***  
+
+        - Exemple  
+
+          ```
+          .p1 {
+          font-style: italic;
+          }
+          ```
+
   - #### Alignements et compositions de textes  
+
+    - La propriété ***text-align*** permet de gérer l’alignement du texte sur l’axe des abscisses (X). Cette propriété comprend plusieurs types de valeurs  
+
+      - La valeur spécifiée par mot-clé correspond à quatre valeurs prédéfinies (***left***, ***center***, ***right*** et ***justify***)  
+
+      - Il existe également une propriété “vertical-align” pour aligner les éléments sur l’axe des ordonnées (Y), mais elle est généralement utilisée avec les tableaux (***\<table>***)  
+
+      - Exemple  
+
+        ```
+        body {
+        width: 400px;
+        }
+
+        p {
+        padding: 10px;
+        border: 1px solid blue;
+        }
+
+        .p-left {
+        text-align: left;
+        }
+
+        .p-right {
+        text-align: right;
+        }
+
+        .p-center {
+        text-align: center;
+        }
+
+        .p-justify {
+        text-align: justify;
+        }
+        ```
+
+    - La propriété ***text-decoration*** permet d’ajouter des décorations à un texte avec comme valeurs principales et il est possible de combiner plusieurs valeurs pour avoir une composition visuelle spécifique
+
+      - ***underline*** qui permet d’ajouter un trait de soulignement au texte  
+      - ***overline*** qui ajoute un trait au-dessus du texte  
+      - ***line-through*** qui permet de barrer un texte  
+
+        - Exemple  
+
+          ```
+          body {
+          font-size: 20px;
+          }
+
+          .sans-soulignement {
+          text-decoration: none;
+          }
+          
+          .avec-soulignement {
+          text-decoration: underline;
+          }
+          
+          .avec-surlignement {
+          text-decoration: overline;	
+          }
+          
+          .avec-surlignement-soulignement {
+          text-decoration: underline overline;
+          }
+          
+          .trait-barre {
+          text-decoration: line-through;
+          }
+          
+          .pointilles {
+          /* souligné + pointillé + couleur rouge */
+          text-decoration: underline dashed red;
+          }
+          ```
+
+    - La propriété text-transform permet de transformer un texte    
+
+        - ***uppercase*** qui met le texte en majuscule  
+        - ***lowercase*** qui met le texte en minuscule  
+        - ***capitalize*** qui met une majuscule à la première lettre de chaque mot d’un texte  
+        - ***globale*** permet de gérer l’héritage ou la réinitialisation comme par exemple ***“inherit”***, ***“initial”***, ***“revert”*** et ***“unset”***
+
+        - Exemple  
+
+          ```
+          span {
+          font-weight: bold;
+          color: blue;
+          }
+
+          .maj {
+          text-transform: uppercase;
+          }
+          
+          .min {
+          text-transform: lowercase;
+          }
+          
+          .cap {
+          text-transform: capitalize;
+          }
+          ```
+
+    - Plusieurs propriétés permettent de gérer les interlignes et les espaces dans les textes
+
+      - ***line-height*** permet de spécifier l’espace entre chaque ligne  
+      - ***letter-spacing*** définit l’espace entre les différents caractères du texte  
+      - ***word-spacing*** définit l’espace entre les différents mots du texte
+
+        - Exemple  
+
+          ```
+          p {
+          font-family: arial, sans-serif;
+          font-size: 16px;
+          border: 1px solid blue;
+          }
+
+          .container {
+          width: 400px;
+          }
+
+          /* hauteur en pixel, mais possible aussi en pourcentage */          
+          .hauteur-de-ligne {
+          line-height: 30px;
+          }
+
+          /* largeur en pixel */
+          .espace-de-lettres-positif {
+          letter-spacing: 5px;
+          }
+          
+          /* largeur en pixel, et valeurs négatives possibles pour serrer davantage les lettres */
+          .espace-de-lettres-negatif {
+          letter-spacing: -1px;
+          }
+          
+          .espace-de-mots-positif {
+          word-spacing: 15px;
+          }
+          
+          .espace-de-mots-negatif {
+          word-spacing: -2px;
+          }
+          ```
+
+      - Il existe beaucoup de mise en forme des textes en CSS, voici quelques-unes des autres propriétés fréquemment utilisées qu’il est intéressant de connaître
+
+          | Propriété     | Notes                                                                                                                               |
+          | :-----------: | :---------------------------------------------------------------------------------------------------------------------------------: |
+          | word-break    |Gère la césure des mots, donc très pratique lorsqu’un mot est très long et qu’il risque de « traverser » un cadre limité en largeur  |
+          | hyphens       | Spécifie comment les mots peuvent être coupés en fin de ligne                                                                       |
+          | overflow-wrap | Tronque une ligne pour empêcher un débordement, ou empêche la césure de celle-ci                                                    |
+          | text-shadow   | Ajoute des ombres au texte                                                                                                          |
+          | opacity       | Définit la transparence d’un élément, de 0 à 1. Cette valeur s’applique à l’ensemble de l’élément et de ses enfants                 |
 
 - ### ***Un peu plus loin dans la mise en forme et la composition des textes***
 
   - #### Couleurs et leur opacité  
 
+    - Voici un tableau qui présente les méthodes d’affichage des couleurs avec leur opacité, et d’autres méthodes moins connues  
+
+    | Méthode             | Exemple                       |  Notes |
+    | :-----------------: | :---------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+    | Hexadécimale alpha  | #0000FFFF                     | Fonctionne comme l’hexadécimale simple, à la différence qu’on ajoute 2 digits pour gérer la couche alpha permettant de gérer la transparence allant de 00 (transparent) à FF (opaque). Il y a maintenant 8 digits pour définir une couleur                              |
+    | RGBA                | rgb(0, 0, 255, 1)             | RGBA = Red Green Blue alpha. Fonctionne comme le RGB, à la différence que la couche supplémentaire alpha permet de gérer la transparence sur la proportion 0 à 1, ainsi 0 est transparent, 0,5 représente 50 % de transparence et 1 une opacité complète.               |
+    | HSL                 | hsl(240, 100 %, 50 %)         | HSL = Hue Saturation Lightness. Valeur basée sur la teinte (H, de 0 à 360), la saturation (S de 0 à 100 %) et la lumière (L de 0) 100 %). L’utilisation est plus complexe, mais la palette de couleur est plus précise.                                                 |
+    | HSLA                | hsl(240, 100 %, 50 %, 1)      | HSLA = Hue Saturation Lightness Alpha. Fonctionne comme le HSL, à la différence que la couche supplémentaire alpha permet de gérer la transparence sur la proportion 0 à 1. Ainsi, 0 est transparent, 0,5 représente 50 % de transparence et 1 une opacité complète.    |
+    | HSV                 | hsv(240, 100 %, 100 %)        | HSV = Hue Saturation Value. Valeur basée sur la teinte (H, de 0 à 360), la saturation (S de 0 à 100 %) et la lumière (L de 0) 100 %). Unité de mesure utilisée pour la peinture ou l’encre, car elle représente mieux les couleurs pour les humains que la valeur RVB.  |
+    | CMYK                | cmyk(100 %, 100 %, 0 %, 0 %)  | CMYK = Cyan, Magenta, Jaune et Noir (CMJN en français). Unité utilisée pour le tirage papier, tel que les imprimantes. Les couleurs sont une combinaison de cyan, magenta, jaune et noir.                                                                               |
+    | HWB                 | hwb(240, 0 %, 0 %)            | HWB = Hue, Whiteness, Blackness. Teinte, blancheur et noirceur. Cette unité de couleur devrait être prise en charge en CSS4                                                                                                                                             |
+    
+      - Il existe d’autres méthodes de couleur telles que LAB, un système de coordonnées rectangulaire avec un axe central de luminosité. LCH avec le même axe que LAB, mais utilisant des coordonnées polaires chroma et teintes donnant des coordonnées polaires cylindriques, OKLAB, OKLCH, les espaces coloriques prédéfinis tels que sRGB color space,  display-p3 color, a98-rgb color, prophoto-rgb color, et bien d’autres encore que l’on peut retrouver sur le site du W3  
+
   - #### Unités de mesure des caractères  
-  
+
+    - L’unité rem s’appuie sur la taille de la police de l’élément racine du document. Ainsi, 1 rem correspond à la taille de police définie par défaut dans les paramètres du navigateur, qui est généralement de 16 px. L’unité de mesure 10 rem sera alors équivalente à 160 px  
+
+      - Exemple
+
+          ```
+          html {
+            font-size: 62,5%; /* Soit 10px */
+          }
+          
+          .paraph_1 {
+          font-size: 1.6rem; /* Soit 16px */
+          }
+
+          .paraph_2 {
+          font-size: 1.9rem; /* Soit 19px */
+          }
+          ```
+
+          - Depuis l’apparition de l’unité rem, l’unité em est moins utilisée, car elle avait le défaut d’agir par héritage et d’être relative au parent. Ainsi, si nous imbriquons plusieurs balises ayant la même taille de police, les éléments enfants vont grossir davantage
+
   - #### Polices téléchargeables  
+
+    - La première solution consiste à utiliser un service tiers tel que Google Fonts qui est un service d’hébergement de polices de caractères libres de droits, téléchargeables et utilisables gratuitement, que nous pouvons visualiser et choisir sur ce lien : [Google Fonts](https://fonts.google.com/)  
+
+      - Exemple  
+
+        ```
+        <!DOCTYPE html>
+        <html>
+        <head>
+
+        <!-- Code à copier/coller depuis la page https://fonts.google.com/specimen/Ruluko -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
+        
+        <style>
+        h1 {
+        /* Ruluko n’a pas d’empattement, elle est donc de la famille sans-serif */
+        font-family: 'Ruluko', sans-serif;
+        }
+        </style>
+
+        </head>
+
+        <body>
+          <h1>Titre écrit avec la police Ruluko</h1>
+        </body>
+        </html>
+        ```
   
   - #### Utiliser des fontes personnelles  
+
+    - La directive @font-face permet de définir une police de caractère spécifique pour une page web. Cette police peut être chargée depuis un serveur local ou distant, et il existe différents formats de fichiers possibles, tels que .ttf (TrueType), .otf (OpenType), .woff, .woff2, .otc, .eot ‘embedded OpenType), .svg, .svgz
+
+    - Voici un exemple avec la police Roboto que vous pouvez télécharger et décompresser dans un dossier nommé “fonts”
+
+    - Pour utiliser ce fichier, vous devez d’abord 
+    
+      - Déclarer la directive @font-face en spécifiant la propriété ***font-famil***y, qui sera attribuée à la valeur Roboto. 
+      
+      - Vous devez ajouter ensuite la propriété ***src*** avec la valeur ***“url”*** et ***“format”***, qui spécifie les différents formats de fichiers présents dans le dossier “fonts”.
+      
+      - Le navigateur choisira le fichier correspondant en fonction de son système. Une fois la directive déclarée, vous pouvez utiliser la propriété font-family sur les éléments HTML pour appliquer la police Roboto et jouer avec les propriétés de poids et de taille pour personnaliser son apparence
+
+        - Exemple  
+
+          ```
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <style>
+                @font-face {
+                font-family: 'Roboto';
+                src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+                url('./fonts/Robot-Regular.ttf') format('truetype');
+                }
+
+                body {
+                font-size: 22px;
+                }
+                
+                span {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                }
+              </style>
+            </head>
+            <body>
+            <p>Exemple avec <span>la police Roboto</span></p>
+            </body>
+          </html>
+          ```
+
+            - Découvrez toutes les propriétés disponibles pour la directive @font-face en consultant la documentation [MDN Web](https://developer.mozilla.org/fr/docs/Web/CSS/@font-face)
   
   - #### Documentations officielles  
+
+    - Vous pouvez utiliser des polices de caractères à distance, sans avoir besoin d’héberger les polices sur votre serveur avec les sites suivants :
+
+      - [Google Fonts](https://fonts.google.com/) : fonts open source, que nous pouvons utiliser gratuitement à des fins personnelles ou commerciales.
+
+      - [CDN](https://www.cdnfonts.com/) : fonts avec diverses licences d’utilisation qu’il faut bien lire avant utilisation.
+
+    - Autres sites utiles :
+
+      - [CSS Fonts](https://www.cssfontstack.com/) : vous pouvez voir la liste des polices web considérées comme “sûres”. Ce site affiche des statistiques de disponibilité en fonction de la police générique et du système d’exploitation.
+
+      - [Code Couleur](https://www.code-couleur.com/) : obtenir des codes hexadécimaux et rvb, et obtenir des palettes de couleurs à partir de photos.
+
+      - [RapidTables](https://www.rapidtables.com/convert/color/index.html) : convertir les couleurs en hexadécimal, RGB, HSV, HSL.
+
+    - Il est important de noter que les navigateurs ne réagissent pas tous de la même manière sur certaines fonctionnalités CSS, et ceci, indépendamment du système d’exploitation. Il est donc essentiel de vérifier la compatibilité des propriétés, soit sur MDM Web Docs de Mozilla ou le site [Can I use](https://caniuse.com/)
