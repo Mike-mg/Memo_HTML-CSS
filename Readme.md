@@ -43,38 +43,53 @@
 
     - Les balises HTML minimal  
 
-      `<!DOCTYPE html>`  
-      `<html lang="fr">`  
-      $\qquad$`<head> ... </head>`  
-      $\qquad$`<body> ... </body>`  
-      `</html>`  
+      ```HTML
+      <!DOCTYPE html>
+      <html lang="fr">
+        <head> ... </head>
+        <body> ... </body>
+      </html>
+      ```  
 
     - Les balises sont « répétées ». En HTML, la grande majorité des balises fonctionnent par paires et sont composées d’une balise d’ouverture et une balise de fermeture  
 
     - La balise de fermeture est identique à la balise d’ouverture si ce n’est qu’elle contient un slash (« / ») juste après le chevron ouvrant  
-      - Ex : `<head> ... </head>`  
+
+      - Exemple :  
+      
+        ```HTML
+        <head> ... </head>
+        ```
 
     - Il existe cependant des balises qui n’ont pas besoin de balise fermante, on les appelle balises auto-fermantes ou orphelines  
 
     - Le code HTML commence toujours avec la balise suivante  
 
-      - `<!DOCTYPE html>`  
+      ```HTML
+      <!DOCTYPE html>
+      ``` 
 
         - Cette balise permet de spécifier au navigateur le type de document HTML utilisé. Il est donc crucial de toujours inclure cette balise au début de votre code HTML  
 
     - La balise ***\<html>*** que l’on appelle aussi l’élément racine du document HTML marque le début du document HTML  
 
-      - `<html> ... </html>`  
+      ```HTML
+      <html> ... </html>
+      ``` 
 
     - La balise ***\<head>*** inclut toutes les informations qui ne s’affichent pas directement dans la page web, mais qui sont utiles pour le bon fonctionnement du code, ainsi que pour les moteurs de recherche  
       
-      - `<head> ... </head>`  
+      ```HTML
+      <head> ... </head>
+      ```  
 
         - La balise ***\<head>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***
 
     - La balise ***\<body>*** définit l’ensemble des éléments qui vont être visibles sur la page tels que les titres, le texte, les images ou encore les formulaires  
 
-      - `<body> ... </body>`  
+      ```HTML
+      <body> ... </body>
+      ``` 
 
         - La balise ***\<body>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***
 
@@ -86,43 +101,57 @@
 
       - La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
 
-        - `<div> ... </div>`  
-
+        ```HTML
+        <div> ... </div>
+        ``` 
+         
     - La balise ***\<nav>***  
 
       - Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site  
 
-        - `<nav> ... </nav>`  
+        ```HTML
+        <nav> ... </nav>
+        ``` 
 
     - La balise ***\<header>***  
 
       - Dans le ***\<header>***, se compose généralement du titre, d’un texte d’introduction ou encore une bannière, c’est ici que vous placerez les éléments qui permettront d’identifier la thématique de votre page web.  
 
-        - `<header> ... </header>`  
+        ```HTML
+        <header> ... </header>
+        ``` 
 
     - La balise ***\<footer>***  
 
       - Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise  
 
-        - `<footer> ... </footer>`  
+        ```HTML
+        <footer> ... </footer>
+        ``` 
 
     - La balise ***\<section>***  
 
       - La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page  
         
-        - `<section> ... </section>`  
+        ```HTML
+        <section> ... </section>
+        ``` 
 
     - La balise ***\<article>***  
 
       - La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires  
 
-        - `<article> ... </article>`  
+        ```HTML
+        <article> ... </article>
+        ``` 
 
     - La balise ***\<aside>***  
 
       - la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes  
 
-        - `<aside> ... </aside>`  
+        ```HTML
+        <aside> ... </aside>
+        ``` 
 
 ##
 ## ***__L'organisation du texte__***  
@@ -133,52 +162,66 @@
 
       - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres  
 
-        `<h1> ... </h1>`  
-        `<h2> ... </h2>`  
-        `<h3> ... </h3>`  
-        `<h4> ... </h4>`  
-        `<h5> ... </h5>`  
-        `<h6> ... </h6>`  
+ 
+        ```HTML
+        <h1> ... </h1>  
+        <h2> ... </h2>  
+        <h3> ... </h3>  
+        <h4> ... </h4>  
+        <h5> ... </h5>  
+        <h6> ... </h6> 
+        ``` 
 
       - La balise \<p>  
 
           - Les balises ***\<p>*** sont utilisées en HTML pour délimiter un paragraphe de texte, elle permet d'ajouter des sauts de ligne entre les différents paragraphes  
 
-            - `<p> ... </p>`  
+            ```HTML
+            <p> ... </p>
+            ``` 
 
       - Les balises \<ul> et \<ol>  
 
         - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
 
-          - `<ul> ... </ul>`  
+          ```HTML
+          <ul> ... </ul>
+          ``` 
 
-      - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
+        - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
 
-        - `<ol> ... </ol>`  
+          ```HTML
+          <ol> ... </ol>
+          ``` 
 
-          - Ces éléments apportent une structure visuelle à l'information  
-          - Ceci qui est crucial pour la lisibilité de la page  
-          - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
+            - Ces éléments apportent une structure visuelle à l'information  
+            - Ceci qui est crucial pour la lisibilité de la page  
+            - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
 
       - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
 
         - Exemple avec la balise ***\<ul>***  
 
-          `<ul>`  
-          $\qquad$`<li> ... </li>`  
-          $\qquad$`<li> ... </li>`  
-          $\qquad$`<li> ... </li>`  
-          $\qquad$`<li> ... </li>`  
-          `</ul>`
+          
+          ```HTML
+          <ul>
+            <li> ... </li>  
+            <li> ... </li>  
+            <li> ... </li>  
+            <li> ... </li>
+          </ul>
+          ```
 
         - Exemple avec la balise ***\<ol>***  
 
-          `<ol>`  
-          $\qquad$`<li> ... </li>`  
-          $\qquad$`<li> ... </li>`  
-          $\qquad$`<li> ... </li>`  
-          $\qquad$`<li> ... </li>`  
-          `</ol>`  
+          ```HTML
+          <ol>
+            <li> ... </li>  
+            <li> ... </li>  
+            <li> ... </li>  
+            <li> ... </li>
+          </ol>
+          ```
 
 - ### ***Mise en forme du texte en HTML***  
 
@@ -196,29 +239,41 @@
 
       - la balise ***\<b>*** sert uniquement à la mise en forme
         
-        - `<b> ... </b>`  
+        ```HTML
+        <b> ... </b>
+        ```
 
       - la balise ***\<strong>*** indique que le mot ou la phrase a une importance particulière
 
-        - `<strong> ... </strong>`  
+        ```HTML
+        <strong> ... </strong>
+        ```
 
     - Les balises ***\<i>*** et ***\<em>*** permettent de faire apparaître le contenu en italique
 
       - la balise ***\<i>*** sert uniquement à la mise en forme
           
-        - `<i> ... </i>`  
+        ```HTML
+        <i> ... </i>
+        ```
 
       - la balise ***\<em>*** est préférée pour mettre en valeur un mot ou une phrase bien précise  
 
-          - `<em> ... </em>`  
+        ```HTML
+        <em> ... </em>
+        ```
 
     - la balise ***\<mark>*** permet de faire ressortir visuellement une partie de texte en la surlignant avec une couleur de fond différente  
           
-      - `<mark> ... </mark>`  
+      ```HTML
+      <mark> ... </mark>
+      ```
 
     - la balise ***\<small>*** est utilisée pour formater du texte en réduisant sa taille. Elle peut être utilisée pour indiquer des notes de bas de page, des légendes, des crédits ou des informations supplémentaires qui ne sont pas essentielles à la compréhension du contenu principal de la page
 
-      - `<small> ... </small>`  
+      ```HTML
+      <small> ... </small>
+      ```
 
 - ### ***Placement du texte en HTML***  
 
@@ -228,19 +283,27 @@
 
       - La balise ***\<br>*** est utilisée pour insérer un saut de ligne simple  
 
-        - `<br />`  
+        ```HTML
+        <br />
+        ```
 
       - La balise ***\<hr>*** est utilisée pour insérer une ligne horizontale pour séparer le texte  
 
-        - `<hr />`  
+        ```HTML
+        <hr />
+        ```
 
     - La balise ***\<blockquote>*** permet de citer du texte dans une page web. Elle est très utile pour citer des extraits de texte provenant d'autres sources, comme des livres, des articles de journaux, des discours ou des entrevues  
 
-      - `<blockquote> ... </blockquote>`  
+      ```HTML
+      <blockquote> ... </blockquote>
+      ```
 
     - La balise ***\<span>*** est utilisée pour définir du texte ou éléments HTML avec une mise en forme particulière. Elle est souvent utilisée pour appliquer des styles spécifiques à une partie d'un bloc de texte sans affecter le reste du texte  
 
-      - `<span> ... </span>`  
+      ```HTML
+      <span> ... </span>
+      ```
 
 ##
 ## ***__Un langage hypertexte__***
@@ -259,7 +322,9 @@
 
       - La balise ***\<a>*** (ancre ou anchor en anglais) est la balise utilisée pour créer des hyperliens en HTML qui comporte différents attributs 
 
-        - `<a> ... </a>`  
+        ```HTML
+        <a> ... </a>
+        ```
 
   - ### ***Créer des liens hypertextes en HTML***  
 
@@ -279,7 +344,9 @@
 
         - Créer des liens hypertextes en HTML  
 
-          - `<a href="www.google.com">Site Google</a>`  
+          ```HTML
+          <a href="www.google.com">Site Google</a>
+          ```
           
             - Ne pas oublier de placer l'URL entre guillemets (“”)  
 
@@ -287,7 +354,9 @@
 
           - Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
             
-            - `<a href="Accueil.html">Accueil</a>`  
+            ```HTML
+            <a href="Accueil.html">Accueil</a>
+            ```
 
         - Créer un lien vers un endroit de la même page <a id="ancre"></a>
 
@@ -297,25 +366,34 @@
           
           - On va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#)
 
-            - Exemple  
+            - Balise HTML de l'ancre  
             
-              > `<section id="projects"> ... \</section>`  
+              ```HTML
+              <section id="projects"> ... \</section>
+              ```
               
-              - `<a href="#projects">Découvrez nos réalisations</a>`  
+              - Lien vers l'ancre HTML
+              
+                ```HTML
+                <a href="#projects">Ancre de la section</a>
+                ```
 
         - Créer un lien courriel  
 
           - Pour créer un lien courriel, il suffit d’utiliser le schéma d’URL mailto  
 
-            - `<a href=”mailto:username@exemple.com”>Contactez-nous</a>`  
+            ```HTML
+            <a href=”mailto:username@exemple.com”>Contactez-nous</a>
+            ```
 
         - Créer un lien vers un document  
 
           - Pour créer un lien vers un document, il suffit d’ajouter le chemin d’accès vers ce document à l’attribut href du lien  
 
-            - `<a href=”/fichier/doc.pdf”>Fichier_PDF</a>`
+            ```HTML
+            <a href=”/fichier/doc.pdf”>Fichier_PDF</a>
+            ```
     
-
   - ### ***Autres attributs de la balise \<a>***  
 
     - #### Autres attributs de la balise  
@@ -324,19 +402,25 @@
 
         - Il va permettre de préciser au navigateur où ouvrir le lien sur lequel l’utilisateur a cliqué. La façon la plus courante de l’utiliser est en lui passant la valeur “_blank” pour ouvrir le lien dans un nouvel onglet ou dans une nouvelle fenêtre. Cependant, il existe d'autres valeurs possibles pour l'attribut "target", comme "_self" pour ouvrir le lien dans la même fenêtre ou "_parent" pour ouvrir le lien dans le cadre parent de la fenêtre en cours
         
-          - `<a href="/HTML/contact.html" target="_blank">Contactez-nous</a>`
+          ```HTML
+          <a href="/HTML/contact.html" target="_blank">Contactez-nous</a>
+          ```
 
       - L’attribut ***dowload***  
 
         - L'attribut "download" est un élément HTML qui permet à un visiteur de télécharger un fichier associé à une page web
 
-          - `<a href=”mon-fichier.pdf” download>Télécharger mon fichier PDF</a>`
+          ```HTML
+          <a href=”mon-fichier.pdf” download>Télécharger mon fichier PDF</a>
+          ```
         
       - L’attribut ***title***  
 
         - L'attribut “title” est un attribut universel, c’est-à-dire qu’il est pris en charge par l’ensemble des balises HTML. Néanmoins, il s’avère particulièrement utile associé à la balise ***\<a>***. Cet attribut permet de donner des informations supplémentaires sur le lien, qui vont s’afficher sous la forme d’info-bulle lorsque l’utilisateur passera la souris dessus
         
-          - `<a href="Taches.html" title="Toutes les taches">Taches à faire</a>`  
+          ```HTML
+          <a href="Taches.html" title="Toutes les taches">Taches à faire</a>
+          ```
 
 ##
 ## ***__Le multimédia en HTML__***
@@ -349,7 +433,7 @@
 
         - Un fichier multimédia est défini comme un fichier informatique qui a la capacité de contenir plusieurs types de médias  
 
-      - Intégrer des images avec les balises \<img> et \<picture>  
+      - Intégrer des images avec les balises ***\<img>*** et ***\<picture>***  
 
         - Il existe 2 méthodes qui permettent d’afficher des fichiers image sur une page web : l’utilisation de la balise ***\<img>*** et celle de la balise ***\<picture>***
 
@@ -361,7 +445,9 @@
 
           - L’attribut alt est un autre attribut courant de la balise ***\<img>***. Il permet d’associer un texte à l’image, dit alternatif, qui s’affiche en cas d’erreur de chargement du fichier  
 
-            - `<img src="picture.png” alt=”Img picture”>`  
+            ```HTML
+            <img src="picture.png” alt=”Img picture”>
+            ```
 
         - La balise ***\<picture>***  
 
@@ -371,13 +457,15 @@
 
           - Chaque image s’affiche si, et seulement si, elle remplit certaines conditions qui sont définies grâce aux attributs de la balise ***\<source>***  
 
-            Exemple  
+            Exemple :  
 
-              `<picture>`  
-              $\qquad$`<source media="(min-width:1200px)" srcset="grande-image.jpg">`  
-              $\qquad$`<source media="(min-width:800px)" srcset="image-moyenne.jpg">`  
-              $\qquad$`<img src="petit-image.jpg" alt="Flowers" style="width:auto;">`  
-              `</picture>`  
+              ```HTML
+              <picture>
+                <source media="(min-width:1200px)" srcset="grande-image.jpg">`  
+                <source media="(min-width:800px)" srcset="image-moyenne.jpg">`  
+                <img src="petit-image.jpg" alt="Flowers" style="width:auto;">`  
+              </picture>
+              ```
 
       - La balise ***\<source>*** nous permet de définir dans l’attribut srcset les sources des différentes images  
 
@@ -395,14 +483,18 @@
 
         - La balise ***\<video>*** permet de partager du contenu de manière ludique et immersive, assure une meilleure compréhension de l’information en la rendant dynamique  
 
-          - `<video src=”./assets/mavideo.mp4” controls>`  
+          ```HTML
+          <video src=”./assets/mavideo.mp4” controls>
+          ```
 
             - Elle peut être utilisée seule ou couplée avec la balise ***\<source>***, si il est est nécessaire de définir plusieurs sources vidéo en fonction des préférences de l’utilisateur ou pour maximiser la compatibilité avec les différents navigateurs  
 
-              `<video controls>`  
-              $\qquad$`<source  src=”./assets/mavideo.webm” type=”video/webm”>`  
-              $\qquad$`<source  src=”./assets/mavideo.mp4” type=”video/mp4”>`  
-              `</video>`  
+              ```HTML
+              <video controls>
+                <source  src=”./assets/mavideo.webm” type=”video/webm”>
+                <source  src=”./assets/mavideo.mp4” type=”video/mp4”>  
+              </video>
+              ```
         
           - L’attribut ***controls*** permet d’afficher les options de contrôle de la vidéo : le bouton de lecture, de pause et de gestion du volume audio  
 
@@ -412,15 +504,19 @@
 
         - La balise ***\<audio>***, permet l’immersion de l’utilisateur avec la possibilité d’intégrer de l’audio à votre page web. la balise présente les mêmes caractéristiques d’utilisation que la balise ***\<video>***  
 
-          - `<audio controls src=”./assets/mon-audio.mp3”>`  
+          ```HTML
+          <audio controls src=”./assets/mon-audio.mp3”>
+          ```
 
             - Avec plusieurs sources  
 
-              - `<audio controls>`  
-              $\qquad$`<source src="audio.mp3" type="audio/mpeg">`  
-              $\qquad$`<source src="audio.ogg" type="audio/ogg">`  
-              $\qquad$`<source src="audio.wav" type="audio/wav">`  
-              `</audio>`  
+              ```HTML
+              <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                <source src="audio.ogg" type="audio/ogg">
+                <source src="audio.wav" type="audio/wav">
+              </audio>
+              ```
 
         - Nous allons préférer l’utilisation de fichiers MP3 pour optimiser la compatibilité avec l’ensemble des navigateurs web  
 
@@ -432,13 +528,17 @@
 
         - Cette balise permet d’intégrer à la page web du contenu externe qui sera traité de manière totalement indépendante  
 
-          - `<iframe width="560" height="315" src="source_vers_contenu">Video</iframe>`  
+          ```HTML
+          <iframe width="560" height="315" src="source_vers_contenu">Video</iframe>
+          ```
 
       - La balise ***\<embed>***  
 
         - Cette permet également d’intégrer du contenu externe à la page web. la différence c’est que la balise ***\<embed>*** est surtout utilisée pour l’intégration de plug-ins  
 
-          - `<embed src="mon_fichier.pdf" width="500" height="375" type="application/pdf">`  
+          ```HTML
+          <embed src="mon_fichier.pdf" width="500" height="375" type="application/pdf">
+          ```
 
       - La balise ***\<object>***  
 
@@ -446,7 +546,9 @@
         
         - La balise ***\<object>*** offre une plus grande flexibilité et une plus grande compatibilité de son contenu avec l’ensemble des navigateurs  
 
-          - `<object data="snippet.html" width="500" height="200">Object</object>`  
+          ```HTML
+          <object data="snippet.html" width="500" height="200">Object</object>
+          ```
 
             - L’attribut ***data*** fonctionne de manière similaire à l’attribut src et accueille le chemin d’accès de la ressource externe à intégrer à la page web  
 
@@ -473,7 +575,7 @@
 
     - CSS est un langage basé sur des règles destinées à des éléments HTML ou des groupes d’éléments HTML  
 
-      ```
+      ```CSS
       /* Ceci est un commentaire non interprété par le navigateur */
 
       /* le sélecteur de titre h1 */
@@ -488,7 +590,7 @@
         text-align: justify;
         color: red;
       }
-      ```  
+      ```
 
         - Ces règles contiennent un sélecteur, l’élément HTML h1 et l’élément p. On ouvre une accolade où l’on va définir une ou plusieurs déclarations sous la forme d’une paire  
           
@@ -514,7 +616,9 @@
 
         - Exemple
 
-          - `<link rel=”stylesheet” href=”styles/style.css”>`  
+          ```HTML
+          <link rel=”stylesheet” href=”styles/style.css”>
+          ```
 
   - #### Organisation et nommage des fichiers dans un site web  
 
@@ -594,7 +698,7 @@
 
       - L'état " visited " s'applique lorsque le lien a été visité précédemment par l'utilisateur  
         
-        ```
+        ```CSS
         a:visited {
           color: grey;
         }
@@ -602,7 +706,7 @@
 
       - L'état " active " s'active lorsque l'utilisateur est en train de cliquer sur le lien  
         
-        ```
+        ```CSS
         a:active {
         color: black;
         }
@@ -610,7 +714,7 @@
 
       - L'état " hover " s'applique lorsque le curseur de la souris survole le lien  
         
-        ```
+        ```CSS
         a:hover {
         color: red;
         text-decoration: none;
@@ -619,7 +723,7 @@
 
       - L'état " focus " est activé lorsque le curseur du clavier est positionné sur le lien, généralement en utilisant la touche " tab "  
         
-        ```
+        ```CSS
         a:focus {
         font-size: 15px;
         color: green;
@@ -676,9 +780,9 @@
       | Hexadécimale  | #0000FF         | Un dièse suivi de 3 paires de digits indiquant respectivement la quantité de rouge, de vert et de bleu                                                  |
       | RGB           | rgb(0, 0, 255)  | La valeur est représentée en 3 couleurs décimales, indiquant respectivement la quantité de rouge, de vert et de bleu. Ces proportions allant de 0 à 255 |  
 
-        - Exemple
+        - Exemple :  
 
-          ```          
+          ```CSS
           .keyword {
           color: red;
           }
@@ -704,9 +808,9 @@
 
           - ***Il existe quelques polices de caractères génériques communes sur les navigateurs internet telles que “Serif”, “Sans-serif”, “Monospace”, “cursive”, “fantasy”, “system-ui”, “emoji”, “math” et “fangsong”, car elles sont installées sur la plupart des ordinateurs. Les polices génériques doivent être utilisées en dernière position dans la liste de font-family***  
 
-          - Exemple  
+          - Exemple :  
 
-            ```
+            ```CSS
             .famille1 {
             font-family: Futura, Verdana, sans-serif;
             }
@@ -729,9 +833,9 @@
 
         - Il est important de retenir que la valeur ***400*** est équivalente à ***normal*** et la valeur ***700*** est équivalente à ***bold***  
 
-        - Exemple  
+        - Exemple :  
 
-          ```
+          ```CSS
           /* Arial accepte facilement plusieurs graisses */
           p {
           font-family: arial;
@@ -758,9 +862,9 @@
 
       - La valeur par mot-clé correspond à des valeurs prédéfinies, il en existe 8. Par exemple “xx-small” correspond à la moitié de la taille par défaut du navigateur, ou encore “large” correspond à 10 % de plus. La valeur en pourcentage donne une proportionnalité par rapport à la valeur de l’élément parent, et enfin la valeur globale qui permet de gérer l’héritage ou la réinitialisation comme par exemple “inherit”, “initial”, “revert” et “unset”  
 
-      - Exemple  
+      - Exemple :  
 
-        ```
+        ```CSS
         body {
         font-family: Arial;
 
@@ -836,9 +940,9 @@
       
       - La valeur globale qui permet de gérer l’héritage ou la réinitialisation comme à travers ***“inherit”***, ***“initial”***, ***“revert”*** et ***“unset”***  
 
-        - Exemple  
+        - Exemple :  
 
-          ```
+          ```CSS
           .p1 {
           font-style: italic;
           }
@@ -852,9 +956,9 @@
 
       - Il existe également une propriété “vertical-align” pour aligner les éléments sur l’axe des ordonnées (Y), mais elle est généralement utilisée avec les tableaux (***\<table>***)  
 
-      - Exemple  
+      - Exemple :  
 
-        ```
+        ```CSS
         body {
         width: 400px;
         }
@@ -887,9 +991,9 @@
       - ***overline*** qui ajoute un trait au-dessus du texte  
       - ***line-through*** qui permet de barrer un texte  
 
-        - Exemple  
+        - Exemple :  
 
-          ```
+          ```CSS
           body {
           font-size: 20px;
           }
@@ -927,9 +1031,9 @@
         - ***capitalize*** qui met une majuscule à la première lettre de chaque mot d’un texte  
         - ***globale*** permet de gérer l’héritage ou la réinitialisation comme par exemple ***“inherit”***, ***“initial”***, ***“revert”*** et ***“unset”***
 
-        - Exemple  
+        - Exemple :  
 
-          ```
+          ```CSS
           span {
           font-weight: bold;
           color: blue;
@@ -954,9 +1058,9 @@
       - ***letter-spacing*** définit l’espace entre les différents caractères du texte  
       - ***word-spacing*** définit l’espace entre les différents mots du texte
 
-        - Exemple  
+        - Exemple :  
 
-          ```
+          ```CSS
           p {
           font-family: arial, sans-serif;
           font-size: 16px;
@@ -1023,9 +1127,9 @@
 
     - L’unité rem s’appuie sur la taille de la police de l’élément racine du document. Ainsi, 1 rem correspond à la taille de police définie par défaut dans les paramètres du navigateur, qui est généralement de 16 px. L’unité de mesure 10 rem sera alors équivalente à 160 px  
 
-      - Exemple
+      - Exemple :  
 
-          ```
+          ```CSS
           html {
             font-size: 62,5%; /* Soit 10px */
           }
@@ -1045,9 +1149,9 @@
 
     - La première solution consiste à utiliser un service tiers tel que Google Fonts qui est un service d’hébergement de polices de caractères libres de droits, téléchargeables et utilisables gratuitement, que nous pouvons visualiser et choisir sur ce lien : [Google Fonts](https://fonts.google.com/)  
 
-      - Exemple  
+      - Exemple :  
 
-        ```
+        ```HTML
         <!DOCTYPE html>
         <html>
         <head>
@@ -1074,46 +1178,46 @@
   
   - #### Utiliser des fontes personnelles  
 
-    - La directive @font-face permet de définir une police de caractère spécifique pour une page web. Cette police peut être chargée depuis un serveur local ou distant, et il existe différents formats de fichiers possibles, tels que .ttf (TrueType), .otf (OpenType), .woff, .woff2, .otc, .eot ‘embedded OpenType), .svg, .svgz
+    - La directive @font-face permet de définir une police de caractère spécifique pour une page web. 
+    
+    - Cette police peut être chargée depuis un serveur local ou distant, et il existe différents formats de fichiers possibles, tels que .ttf (TrueType), .otf (OpenType), .woff, .woff2, .otc, eot (embedded OpenType), .svg, .svgz
 
     - Voici un exemple avec la police Roboto que vous pouvez télécharger et décompresser dans un dossier nommé “fonts”
 
-    - Pour utiliser ce fichier, vous devez d’abord 
-    
-      - Déclarer la directive @font-face en spécifiant la propriété ***font-famil***y, qui sera attribuée à la valeur Roboto. 
+      - Pour utiliser ce fichier, vous devez d’abord 
       
-      - Vous devez ajouter ensuite la propriété ***src*** avec la valeur ***“url”*** et ***“format”***, qui spécifie les différents formats de fichiers présents dans le dossier “fonts”.
-      
-      - Le navigateur choisira le fichier correspondant en fonction de son système. Une fois la directive déclarée, vous pouvez utiliser la propriété font-family sur les éléments HTML pour appliquer la police Roboto et jouer avec les propriétés de poids et de taille pour personnaliser son apparence
+        - Déclarer la directive @font-face en spécifiant la propriété ***font-famil***y, qui sera attribuée à la valeur Roboto. 
+        
+        - Vous devez ajouter ensuite la propriété ***src*** avec la valeur ***“url”*** et ***“format”***, qui spécifie les différents formats de fichiers présents dans le dossier “fonts”.
+        
+        - Le navigateur choisira le fichier correspondant en fonction de son système. Une fois la directive déclarée, vous pouvez utiliser la propriété font-family sur les éléments HTML pour appliquer la police Roboto et jouer avec les propriétés de poids et de taille pour personnaliser son apparence
 
-        - Exemple  
+            ```HTML
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <style>
+                  @font-face {
+                  font-family: 'Roboto';
+                  src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+                  url('./fonts/Robot-Regular.ttf') format('truetype');
+                  }
 
-          ```
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <style>
-                @font-face {
-                font-family: 'Roboto';
-                src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
-                url('./fonts/Robot-Regular.ttf') format('truetype');
-                }
-
-                body {
-                font-size: 22px;
-                }
-                
-                span {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 700;
-                }
-              </style>
-            </head>
-            <body>
-            <p>Exemple avec <span>la police Roboto</span></p>
-            </body>
-          </html>
-          ```
+                  body {
+                  font-size: 22px;
+                  }
+                  
+                  span {
+                  font-family: 'Roboto', sans-serif;
+                  font-weight: 700;
+                  }
+                </style>
+              </head>
+              <body>
+              <p>Exemple avec <span>la police Roboto</span></p>
+              </body>
+            </html>
+            ```
 
             - Découvrez toutes les propriétés disponibles pour la directive @font-face en consultant la documentation [MDN Web](https://developer.mozilla.org/fr/docs/Web/CSS/@font-face)
   
@@ -1134,3 +1238,269 @@
       - [RapidTables](https://www.rapidtables.com/convert/color/index.html) : convertir les couleurs en hexadécimal, RGB, HSV, HSL.
 
     - Il est important de noter que les navigateurs ne réagissent pas tous de la même manière sur certaines fonctionnalités CSS, et ceci, indépendamment du système d’exploitation. Il est donc essentiel de vérifier la compatibilité des propriétés, soit sur MDM Web Docs de Mozilla ou le site [Can I use](https://caniuse.com/)
+
+##
+## ***__La structuration logique en HTML5 et le modèle de boîtes en CSS3__***
+
+- ### ***Structure logique en HTML5***  
+
+  - #### Structure logique en HTML5  
+
+    - HTML5 améliore la structure et la compréhension des pages web. Les éléments sémantiques d'HTML5 décrivent explicitement le rôle et la structure des différentes parties d'une page  
+
+      - La balise ***\<header>*** sert à définir l'en-tête d'une page web ou d'une section dans une page  
+      
+        - Il est utilisé pour regrouper des informations d'introduction ou de navigation, Elle peut contenir des éléments tels que :
+        
+          - Des titres
+          - Des logos
+          - Des menus de navigation 
+          - Ou des informations de contact
+
+        - La balise est de type ***"container"***, elle doit être ouverte et fermée  
+
+          Exemple :  
+
+            ```HTML
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <title>Ma Page</title>
+              </head>
+              <body>
+                <header>
+                  <!-- Logo -->
+                  <a href="index.html"><img src="logo.png" alt="Logo"></a>
+                  <!-- Navigation -->
+                </header>
+                <main>
+                  <!-- Contenu principal de la page -->
+                </main>
+                <footer>
+                  <!-- Pied de page -->
+                </footer>
+              </body>
+            </html>
+            ```
+
+      - La balise ***\<nav>*** représente une section de navigation dans une page web  
+        
+        - Il est utilisé pour regrouper les liens de navigation principaux, tels que les liens vers les pages internes d'un site web ou les liens vers des ressources externes  
+
+        - La balise de type ***"container"*** ; elle est donc doit être ouverte puis fermée  
+
+        - Pour améliorer l'accessibilité, ajoutez un attribut ***aria-label*** à l'élément ***\<nav>*** avec une description claire de la section de navigation  
+        
+          - Exemple :  
+          
+            ```HTML
+            <nav aria-label="Menu principal"> ... </nav>
+            ```
+          
+          - Autre exemple :  
+
+            ```HTML
+            <header>
+              <h1>Titre du site</h1>
+              <nav aria-label="Menu principal">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="apropos.html">À propos</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
+            ```
+
+              - Dans cet exemple, l'élément ***\<nav>*** est utilisé pour créer un menu de navigation principal à l'intérieur de l'en-tête ***\<header>***  
+
+      - La balise ***\<main>*** représente le contenu principal d'une page web et est de type ***“container”***  
+        
+        - Elle doit être utilisé une seule fois par page pour englober le contenu principal. Pour améliorer l'accessibilité, ajoutez un attribut ***role*** avec la valeur ***"main"*** à l'élément ***\<main>***
+
+        - L'élément ***\<main>*** est généralement placé après l'en-tête ***\<header>*** et la navigation ***\<nav>***, et avant le pied de page ***\<footer>*** 
+
+          - Exemple :  
+
+            ```HTML
+            <main role="main">
+
+              <article>
+                <h2>Titre de l'article</h2>
+                <p>Contenu de l'article...</p>
+              </article>
+              
+              <section>
+                  <h2>Titre de la section</h2>
+                  <p>Contenu de la section...</p>
+              </section>
+
+            </main>
+            ```
+
+      - La balise ***\<article>*** représente une section indépendante et autonome de contenu dans une page web et est utilisé pour englober des éléments tels que :  
+      
+        - Les articles de blog  
+        - Les actualités  
+        - Les commentaires  
+        - Ou contenu qui pourrait être réutilisé ou distribué séparément du reste de la page  
+        
+          -  Les balises ***\<article>*** peuvent être incluses à l'intérieur d'autres éléments sémantiques, tels que ***\<main>***, ***\<section>*** ou même d'autres éléments ***\<article>***  
+
+          - Les éléments ***\<header>*** et ***\<footer>*** peuvent être utilisés à l'intérieur d'un ***\<article>*** pour décrire le contenu de l'article  
+          
+            - Par exemple :  
+            
+              - Un ***\<header>*** à l'intérieur d'un ***\<article>*** peut contenir le titre et les informations sur l'auteur  
+              
+              - Un ***\<footer>*** peut inclure des liens vers des articles connexes, des balises ou des informations de copyright.
+
+              - Ajouter des éléments de titre ***\<h1>*** à ***\<h6>*** structure le contenu de l'article  
+
+        - Exemple :  
+
+          ```HTML
+          <!DOCTYPE html>
+          <html lang="fr">
+            <head>
+            <!-- tête de la page -->
+            </head> 
+            <body>
+              <header>
+              <!-- En-tête de la page -->
+              </header>
+              <main role="main">
+                <article>
+                  <header>
+                    <h1>Titre de l'article</h1>
+                    <p>Auteur : Jane Doe</p>
+                    <p>Date : 17 avril 2023</p>
+                  </header>
+
+                  <p>Contenu de l'article...</p>
+                  <p>Autre paragraphe de l'article...</p>
+                  
+                  <footer>
+                    <p>Tags : HTML5, sémantique, accessibilité</p>
+                  </footer>
+                </article>
+              </main>
+              <footer>
+              <!-- Pied de page -->
+              </footer>
+            </body>
+          </html>
+          ```
+
+      - La balise ***\<section>*** représente une section générique de contenu dans une page web  
+
+        - Elle est utilisé pour regrouper des éléments thématiquement cohérents ou relatifs, généralement accompagnés d'un titre  
+
+        - Chaque ***\<section>*** est accompagnée d'un élément de titre ***\<h1>*** à ***\<h6>***  
+
+        - Elle peut être imbriqué à l'intérieur d'autres éléments sémantiques, tels que ***\<main>***, ***\<article>*** ou d'autres éléments ***\<section>***  
+
+        - Exemple :  
+
+          ```HTML
+          <main role="main">
+
+            <section>
+              <h2>Introduction</h2>
+              <p>Contenu de l'introduction...</p>
+            </section>
+            
+            <section>
+              <h2>Chapitre 1</h2>
+              <p>Contenu du chapitre 1...</p>
+            </section>
+
+            <section>
+              <h2>Chapitre 2</h2>
+              <p>Contenu du chapitre 2...</p>
+            </section>
+          
+          </main>
+          ```
+
+      - La balise ***\<aside>*** représente une section de contenu qui est tangentielle ou indirectement liée au contenu principal de la page  
+
+        - Il est souvent utilisé pour englober des éléments tels que :
+
+          - Les barres latérales  
+          - Les encadrés  
+          - Les publicités  
+          - Les biographies d'auteurs  
+          - Du contenu qui peuvent être considérés comme séparés du contenu principal  
+
+        - Exemple :  
+
+          ```HTML
+          <main role="main">
+            <article>
+            <!-- Contenu principal de l'article -->
+            </article>
+
+            <aside>
+              <h3>À propos de l'auteur</h3>
+              
+              <p>Jane Doe est une développeuse web spécialisée dans les technologies front-end et  
+              l'accessibilité.</p>
+              
+              <h3>Articles connexes</h3>
+
+              <ul>
+                <li><a href="#">Titre de l'article connexe 1</a></li>
+                <li><a href="#">Titre de l'article connexe 2</a></li>
+                <li><a href="#">Titre de l'article connexe 3</a></li>
+              </ul>
+            </aside>
+          </main>
+          ```
+
+        - Elle peut être imbriqué à l'intérieur d'autres éléments sémantiques, tels que ***\<main>***, ***\<article>*** ou d'autres éléments ***\<section>***  
+
+      - La balise ***\<footer>*** peut être imbriqué à l'intérieur d'autres éléments sémantiques, tels que ***\<main>***, ***\<article>*** ou ***\<section>***
+
+        - Exemple :  
+
+          ```HTML
+          <body>
+            <header>
+            <!-- Contenu de l’en-tête de la page -->
+            </header>
+            
+            <main>
+            <!-- Contenu principal de la page -->        
+            </main>
+
+            <footer>
+              <p>&copy; 2023 Tous droits réservés. Conçu par Jane Doe.</p>
+              <nav>
+              <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Mentions légales</a></li>
+              </ul>
+              </nav>
+            </footer>
+          </body>
+          ```
+
+- ### ***Modèle de boîtes en CSS3***  
+
+  - #### Modèle de boîtes en CSS3
+
+    - 
+
+
+
+
+
+##
+## ***____*** Theme
+
+- ### ****** (grand titre)
+
+  - #### (petit titre)
