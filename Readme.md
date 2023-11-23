@@ -6,7 +6,7 @@
 
   - #### Qu’est-ce que le HTML ?
 
-    - Le HTML ( HyperText Markup Language ), est utilisé pour mettre en page un site web  
+    - Le HTML ( HyperText Markup Language ), est utilisé pour mettre en page un site web.  
 
       - [Lien vers la page des références des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 
@@ -14,7 +14,7 @@
 
   - #### HTML, un langage en constante évolution
 
-    - Le W3C ( Wolrd wide Web Consortium ), est l’organisme chargé de la standardisation et de la compatibilité des technologies du web  
+    - Le W3C ( Wolrd wide Web Consortium ), est l’organisme chargé de la standardisation et de la compatibilité des technologies du web.  
 
       - [Site du W3C](https://www.w3.org/) <a id="W3C"></a>
 
@@ -22,13 +22,10 @@
 
   - #### HTML, un langage côté client
 
-    - Le « côté client » couvre toutes les opérations effectuées par une application ou un site web au sein d’un navigateur  
-
-    - Le langage HTML est donc un langage « côté client ». C’est le navigateur de l’utilisateur qui interprète le HTML  
-
-    - Les pages d’un site web sont transmises sous forme de code HTML brut au navigateur, qui va l’interpréter pour afficher son contenu sur l’écran  
-
-    - Cette partie du développement d’un site web est appelée « développement frontend », faisant référence à la partie création de l’interface utilisateur, au côté visuel d’un site ou d’une application web. HTML sert à définir la structure et l’organisation des pages  
+    - Le « côté client » couvre toutes les opérations effectuées par une application ou un site web au sein d’un navigateur.  
+    - Le langage HTML est donc un langage « côté client ». C’est le navigateur de l’utilisateur qui interprète le HTML.  
+    - Les pages d’un site web sont transmises sous forme de code HTML brut au navigateur, qui va l’interpréter pour afficher son contenu sur l’écran.  
+    - Cette partie du développement d’un site web est appelée « développement frontend », faisant référence à la partie création de l’interface utilisateur, au côté visuel d’un site ou d’une application web. HTML sert à définir la structure et l’organisation des pages.  
 
 ##
 ## ***__Syntaxe générale de HTML__***  
@@ -37,9 +34,8 @@
 
   - #### Syntaxe générale du code HTML  
 
-    - Le code HTML est un langage de balisage hypertexte : il se construit à l’aide de balises, qui sont entourées par deux chevrons « < » et « > »  
-
-    - Ces balises peuvent également prendre en charge des attributs, qui, eux, permettront de donner plus de précision sur la façon dont la balise doit être interprétée  
+    - Le code HTML est un langage de balisage hypertexte : il se construit à l’aide de balises, qui sont entourées par deux chevrons « < » et « > ».  
+    - Ces balises peuvent également prendre en charge des attributs, qui, eux, permettront de donner plus de précision sur la façon dont la balise doit être interprétée.  
 
     - Les balises HTML minimal  
 
@@ -51,9 +47,8 @@
       </html>
       ```  
 
-    - Les balises sont « répétées ». En HTML, la grande majorité des balises fonctionnent par paires et sont composées d’une balise d’ouverture et une balise de fermeture  
-
-    - La balise de fermeture est identique à la balise d’ouverture si ce n’est qu’elle contient un slash (« / ») juste après le chevron ouvrant  
+    - Les balises sont « répétées ». En HTML, la grande majorité des balises fonctionnent par paires et sont composées d’une balise d’ouverture et une balise de fermeture.  
+    - La balise de fermeture est identique à la balise d’ouverture si ce n’est qu’elle contient un slash (« / ») juste après le chevron ouvrant.  
 
       - Exemple :  
       
@@ -61,37 +56,36 @@
         <head> ... </head>
         ```
 
-    - Il existe cependant des balises qui n’ont pas besoin de balise fermante, on les appelle balises auto-fermantes ou orphelines  
-
-    - Le code HTML commence toujours avec la balise suivante  
+    - Il existe cependant des balises qui n’ont pas besoin de balise fermante, on les appelle balises auto-fermantes ou orphelines.  
+    - Le code HTML commence toujours avec la balise suivante :  
 
       ```HTML
       <!DOCTYPE html>
       ``` 
 
-        - Cette balise permet de spécifier au navigateur le type de document HTML utilisé. Il est donc crucial de toujours inclure cette balise au début de votre code HTML  
+        - Cette balise permet de spécifier au navigateur le type de document HTML utilisé. Il est donc crucial de toujours inclure cette balise au début de votre code HTML.  
 
-    - La balise ***\<html>*** que l’on appelle aussi l’élément racine du document HTML marque le début du document HTML  
+    - La balise ***\<html>*** que l’on appelle aussi l’élément racine du document HTML marque le début du document HTML.  
 
       ```HTML
       <html> ... </html>
       ``` 
 
-    - La balise ***\<head>*** inclut toutes les informations qui ne s’affichent pas directement dans la page web, mais qui sont utiles pour le bon fonctionnement du code, ainsi que pour les moteurs de recherche  
+    - La balise ***\<head>*** inclut toutes les informations qui ne s’affichent pas directement dans la page web, mais qui sont utiles pour le bon fonctionnement du code, ainsi que pour les moteurs de recherche.  
       
       ```HTML
       <head> ... </head>
       ```  
 
-        - La balise ***\<head>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***
+        - La balise ***\<head>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***.  
 
-    - La balise ***\<body>*** définit l’ensemble des éléments qui vont être visibles sur la page tels que les titres, le texte, les images ou encore les formulaires  
+    - La balise ***\<body>*** définit l’ensemble des éléments qui vont être visibles sur la page tels que les titres, le texte, les images ou encore les formulaires.  
 
       ```HTML
       <body> ... </body>
       ``` 
 
-        - La balise ***\<body>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***
+        - La balise ***\<body>*** est essentielle, Elle s’imbrique entre la balise d’ouverture ***\<html>*** et de fermeture ***\</html>***.
 
 - ### ***Balises structurelles en HTML***  
 
@@ -99,7 +93,7 @@
 
     - La balise ***\<div>***  
 
-      - La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée  
+      - La balise ***\<div>*** est la balise la plus couramment utilisée pour placer du contenu sur une page web, elle va permettre de diviser la page web en différents espaces et donc de la structurer de manière organisée.  
 
         ```HTML
         <div> ... </div>
@@ -107,7 +101,7 @@
          
     - La balise ***\<nav>***  
 
-      - Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site  
+      - Délimite la partie de la page dans laquelle nous allons pouvoir trouver les liens qui conduisent les autres pages du site web. Il s’agit de la balise de navigation où l’on pourra retrouver le menu principal du site.  
 
         ```HTML
         <nav> ... </nav>
@@ -123,7 +117,7 @@
 
     - La balise ***\<footer>***  
 
-      - Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise  
+      - Dans le pied page ***\<footer>*** on retrouvera le menu de bas de page, les pages légales et les informations relatives aux droits d’auteur, sera intégré dans la balise.  
 
         ```HTML
         <footer> ... </footer>
@@ -131,7 +125,7 @@
 
     - La balise ***\<section>***  
 
-      - La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page  
+      - La balise ***\<section>*** est utiliser pour regrouper les éléments d’une même thématique dans un conteneur dédié, elle permet de découper le contenu par thématique pour mieux organiser le contenu sur la page.  
         
         ```HTML
         <section> ... </section>
@@ -139,7 +133,7 @@
 
     - La balise ***\<article>***  
 
-      - La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires  
+      - La balise ***\<article>*** est utilisée pour délimiter une section dont le contenu est autonome, comme des articles de blog, des produits ou encore des commentaires.  
 
         ```HTML
         <article> ... </article>
@@ -147,7 +141,7 @@
 
     - La balise ***\<aside>***  
 
-      - la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes  
+      - la balise ***\<aside>*** sert à définir un contenu « à côté » d’un contenu principal. Ce contenu à part est souvent lié de manière indirecte au contenu principal. On l’utilise pour les encarts publicitaires ou encore les articles connexes.  
 
         ```HTML
         <aside> ... </aside>
@@ -160,7 +154,7 @@
 
     - #### Éléments d’organisation du texte en HTML
 
-      - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres  
+      - Il existe plusieurs niveaux de balises de titres, allant du ***\<h1>*** jusqu'au ***\<h6>***. Les balises ont des tailles et des styles de police différents, ce qui permet de les différencier visuellement. Ainsi, le titre principal de la page est inséré dans la balise ***\<h1>***, tandis que les balises ***\<h2>*** à ***\<h6>*** sont utilisées pour les sous-titres.  
 
  
         ```HTML
@@ -174,7 +168,7 @@
 
       - La balise \<p>  
 
-          - Les balises ***\<p>*** sont utilisées en HTML pour délimiter un paragraphe de texte, elle permet d'ajouter des sauts de ligne entre les différents paragraphes  
+          - Les balises ***\<p>*** sont utilisées en HTML pour délimiter un paragraphe de texte, elle permet d'ajouter des sauts de ligne entre les différents paragraphes.  
 
             ```HTML
             <p> ... </p>
@@ -182,25 +176,25 @@
 
       - Les balises \<ul> et \<ol>  
 
-        - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles  
+        - La balise ***\<ul>*** permet de créer une liste d'éléments sans ordre particulier. Chaque item est précédé d'un point (ou autre symbole), et il n'y a pas de numérotation. Ce type de liste est idéal pour présenter des informations qui ne sont pas liées entre elles.  
 
           ```HTML
           <ul> ... </ul>
           ``` 
 
-        - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus  
+        - la balise ***\<ol>*** permet de créer une liste ordonnée, où chaque item est numéroté. Cette liste est très utile pour présenter des informations qui ont un ordre ou une hiérarchie, comme les étapes d'un processus.  
 
           ```HTML
           <ol> ... </ol>
           ``` 
 
-            - Ces éléments apportent une structure visuelle à l'information  
-            - Ceci qui est crucial pour la lisibilité de la page  
-            - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste  
+            - Ces éléments apportent une structure visuelle à l'information.  
+            - Ceci qui est crucial pour la lisibilité de la page.  
+            - Il est possible d'ajouter des sous-listes à l'intérieur d'une liste principale, il faut ajouter une liste imbriquée dans une autre liste.  
 
-      - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***
+      - Les balises ***\<li>***, il est également important de noter que, à l'intérieur de ces deux balises, chaque élément de la liste est inscrit dans une balise ***\<li>***.
 
-        - Exemple avec la balise ***\<ul>***  
+        - Exemple avec la balise ***\<ul>*** :  
 
           
           ```HTML
@@ -212,7 +206,7 @@
           </ul>
           ```
 
-        - Exemple avec la balise ***\<ol>***  
+        - Exemple avec la balise ***\<ol>*** :  
 
           ```HTML
           <ol>
@@ -227,49 +221,45 @@
 
   - #### Mise en forme du texte en HTML  
 
-    - une balise block est une balise qui crée un nouveau bloc de contenu sur la page web. Cela signifie que tout le contenu compris entre la balise d'ouverture et la balise de fermeture sera affiché comme un bloc distinct  
+    - une balise block est une balise qui crée un nouveau bloc de contenu sur la page web. Cela signifie que tout le contenu compris entre la balise d'ouverture et la balise de fermeture sera affiché comme un bloc distinct.  
+    - Les exemples les plus courants de balises block incluent les balises ***\<div>***, ***\<p>***, ***\<ul>***, ***\<ol>***, ***\<h1>*** à ***\<h6>*** et ***\<blockquote>***.  
+    - Les balises inline sont souvent utilisées pour formater le texte ou pour ajouter des éléments en ligne, tels que des liens hypertextes, des images ou des boutons. Les exemples les plus courants de balises inline incluent les balises ***\<a>***, ***\<img>***, ***\<span>*** et ***\<button>***.  
+    - Lors de la création d'une page web, il est important de considérer la mise en forme, le HTML a plusieurs balises qui permettent de mettre en évidence certains mots ou texte.
+    - Les balises ***\<b>*** et ***\<strong>*** permettent de faire apparaître le contenu en gras.
 
-    - Les exemples les plus courants de balises block incluent les balises ***\<div>***, ***\<p>***, ***\<ul>***, ***\<ol>***, ***\<h1>*** à ***\<h6>*** et ***\<blockquote>***  
-
-    - Les balises inline sont souvent utilisées pour formater le texte ou pour ajouter des éléments en ligne, tels que des liens hypertextes, des images ou des boutons. Les exemples les plus courants de balises inline incluent les balises ***\<a>***, ***\<img>***, ***\<span>*** et ***\<button>***  
-
-    - Lors de la création d'une page web, il est important de considérer la mise en forme, le HTML a plusieurs balises qui permettent de mettre en évidence certains mots ou texte
-
-    - Les balises ***\<b>*** et ***\<strong>*** permettent de faire apparaître le contenu en gras
-
-      - la balise ***\<b>*** sert uniquement à la mise en forme
+      - la balise ***\<b>*** sert uniquement à la mise en forme.
         
         ```HTML
         <b> ... </b>
         ```
 
-      - la balise ***\<strong>*** indique que le mot ou la phrase a une importance particulière
+      - la balise ***\<strong>*** indique que le mot ou la phrase a une importance particulière.
 
         ```HTML
         <strong> ... </strong>
         ```
 
-    - Les balises ***\<i>*** et ***\<em>*** permettent de faire apparaître le contenu en italique
+    - Les balises ***\<i>*** et ***\<em>*** permettent de faire apparaître le contenu en italique.
 
-      - la balise ***\<i>*** sert uniquement à la mise en forme
+      - la balise ***\<i>*** sert uniquement à la mise en forme.
           
         ```HTML
         <i> ... </i>
         ```
 
-      - la balise ***\<em>*** est préférée pour mettre en valeur un mot ou une phrase bien précise  
+      - la balise ***\<em>*** est préférée pour mettre en valeur un mot ou une phrase bien précise.  
 
         ```HTML
         <em> ... </em>
         ```
 
-    - la balise ***\<mark>*** permet de faire ressortir visuellement une partie de texte en la surlignant avec une couleur de fond différente  
+    - la balise ***\<mark>*** permet de faire ressortir visuellement une partie de texte en la surlignant avec une couleur de fond différente.  
           
       ```HTML
       <mark> ... </mark>
       ```
 
-    - la balise ***\<small>*** est utilisée pour formater du texte en réduisant sa taille. Elle peut être utilisée pour indiquer des notes de bas de page, des légendes, des crédits ou des informations supplémentaires qui ne sont pas essentielles à la compréhension du contenu principal de la page
+    - la balise ***\<small>*** est utilisée pour formater du texte en réduisant sa taille. Elle peut être utilisée pour indiquer des notes de bas de page, des légendes, des crédits ou des informations supplémentaires qui ne sont pas essentielles à la compréhension du contenu principal de la page.
 
       ```HTML
       <small> ... </small>
@@ -279,27 +269,27 @@
 
   - #### Placement du texte en HTML
 
-    - Les balises ***\<br>*** et ***\<hr>*** sont utilisées en HTML pour insérer des sauts de ligne et des séparateurs horizontaux dans le texte
+    - Les balises ***\<br>*** et ***\<hr>*** sont utilisées en HTML pour insérer des sauts de ligne et des séparateurs horizontaux dans le texte.
 
-      - La balise ***\<br>*** est utilisée pour insérer un saut de ligne simple  
+      - La balise ***\<br>*** est utilisée pour insérer un saut de ligne simple.  
 
         ```HTML
         <br />
         ```
 
-      - La balise ***\<hr>*** est utilisée pour insérer une ligne horizontale pour séparer le texte  
+      - La balise ***\<hr>*** est utilisée pour insérer une ligne horizontale pour séparer le texte.  
 
         ```HTML
         <hr />
         ```
 
-    - La balise ***\<blockquote>*** permet de citer du texte dans une page web. Elle est très utile pour citer des extraits de texte provenant d'autres sources, comme des livres, des articles de journaux, des discours ou des entrevues  
+    - La balise ***\<blockquote>*** permet de citer du texte dans une page web. Elle est très utile pour citer des extraits de texte provenant d'autres sources, comme des livres, des articles de journaux, des discours ou des entrevues.  
 
       ```HTML
       <blockquote> ... </blockquote>
       ```
 
-    - La balise ***\<span>*** est utilisée pour définir du texte ou éléments HTML avec une mise en forme particulière. Elle est souvent utilisée pour appliquer des styles spécifiques à une partie d'un bloc de texte sans affecter le reste du texte  
+    - La balise ***\<span>*** est utilisée pour définir du texte ou éléments HTML avec une mise en forme particulière. Elle est souvent utilisée pour appliquer des styles spécifiques à une partie d'un bloc de texte sans affecter le reste du texte.  
 
       ```HTML
       <span> ... </span>
@@ -312,15 +302,15 @@
 
     - #### Lier des éléments grâce à l’hypertexte
 
-      - Un lien hypertexte est un élément interactif d’une page web
-      - Cela permet à l’utilisateur qui clique dessus de naviguer entre différents contenus
-      - Les liens hypertextes peuvent prendre différents formats commes par exemple
+      - Un lien hypertexte est un élément interactif d’une page web.
+      - Cela permet à l’utilisateur qui clique dessus de naviguer entre différents contenus.
+      - Les liens hypertextes peuvent prendre différents formats commes par exemple.
 
         - Du texte  
         - Des images  
         - Des boutons  
 
-      - La balise ***\<a>*** (ancre ou anchor en anglais) est la balise utilisée pour créer des hyperliens en HTML qui comporte différents attributs 
+      - La balise ***\<a>*** (ancre ou anchor en anglais) est la balise utilisée pour créer des hyperliens en HTML qui comporte différents attributs. 
 
         ```HTML
         <a> ... </a>
@@ -332,9 +322,8 @@
       
       - ***L’attribut href***  
 
-        - L’attribut href contient le lien vers lequel vous souhaitez rediriger l’utilisateur, il peut accueillir n’importe quel schéma d’URL si il est pris en charge par les navigateurs web. Cet attribut est un attribut essentiel de la balise ***\<a>***  
-        
-        - Il peut s’agir  
+        - L’attribut href contient le lien vers lequel vous souhaitez rediriger l’utilisateur, il peut accueillir n’importe quel schéma d’URL si il est pris en charge par les navigateurs web. Cet attribut est un attribut essentiel de la balise ***\<a>***.  
+        - Il peut s’agir :  
           
             - D’un lien interne vers une autre page du même site web  
             - Vers une autre section d’une même page web  
@@ -348,11 +337,11 @@
           <a href="www.google.com">Site Google</a>
           ```
           
-            - Ne pas oublier de placer l'URL entre guillemets (“”)  
+            - Ne pas oublier de placer l'URL entre guillemets (“”).  
 
         - Créer un lien interne  
 
-          - Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page
+          - Insérer dans l'attribut ***href*** le chemin d’accès relatif ou absolu vers le document HTML de la page.
             
             ```HTML
             <a href="Accueil.html">Accueil</a>
@@ -360,11 +349,9 @@
 
         - Créer un lien vers un endroit de la même page <a id="ancre"></a>
 
-          - Cela permet de créer un lien sur un endroit précis d’une page comme une section, c'est ce qui s’appelle créer une ancre  
-          
-          - Il faut donner un attribut “id” à l’élément que l’on souhaite lier
-          
-          - On va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#)
+          - Cela permet de créer un lien sur un endroit précis d’une page comme une section, c'est ce qui s’appelle créer une ancre.  
+          - Il faut donner un attribut “id” à l’élément que l’on souhaite lier.
+          - On va attribuer à l’attribut “href” de la balise de lien l’id de cet élément précédé du signe dièse (#).
 
             - Balise HTML de l'ancre  
             
@@ -477,7 +464,7 @@
 
         - Si l'écran a une largeur inférieure à 800px, la source choisie sera le fichier « petit-image.jpg »
 
-        > Les formats AVIF et WebP sont les formats qui offrent les meilleures performances, ils optimisent la vitesse de chargement des images et donc de la page web
+          - Les formats AVIF et WebP sont les formats qui offrent les meilleures performances, ils optimisent la vitesse de chargement des images et donc de la page web
 
       - La balise ***\<video>***  
 
@@ -1492,7 +1479,219 @@
 
   - #### Modèle de boîtes en CSS3
 
-    - 
+    - Le modèle de boîtes (box model) en CSS3 est un concept fondamental. Chaque élément est considéré comme une boîte rectangulaire  
+
+    - Le modèle de boîtes est composé de plusieurs parties : 
+    
+      - ***Le contenu***  
+
+        - Représente le contenu. Il est possible d’augmenter sa zone en hauteur avec la propriété “height” et sa largeur avec la propriété “width”  
+
+      - ***Le padding*** (marge intérieure)  
+
+        - C’est une zone entourant le contenu. La propriété “padding” permet de modifier l’épaisseur de celui-ci  
+
+      - ***La bordure***  
+
+        - La bordure entoure le contenu ainsi que le padding. La propriété “border” permet de modifier sa taille à l’image de padding, mais également son style  
+      
+      - ***La marge*** extérieure (margin)  
+
+        - la marge englobe toutes les autres boîtes CSS d’un bloc. C’est la propriété “margin” qui permet de paramétrer les valeurs des quatre côtés  
+
+          - Exemple en image :  
+          
+            ![Block CSS](/Pictures/struc_bloc_css_1.png)
+
+
+            - Quelques exemple de code :  
+
+              ```CSS
+              .box {
+              margin: 10px 50px 20px 0;
+              }
+              ```
+
+                - le bloc box à “margin-top” à 10px, “margin-right” à 50px, “margin-bottom” à 20px et “margin-left” à 0px  
+
+              ```CSS
+              .box {
+              width: 250px;
+              height: 100px;
+              padding : 10px;
+              margin: 10px;
+              border: 5px solid black;
+              }
+              ```
+
+                - Si on ne renseigne qu’une valeur, cela signifie que les quatre côtés du bloc défini auront la même valeur  
+
+    - ***Les Unités de mesures CSS***
+
+      - Les unités les plus courantes sont les pixels (px)  
+        - Les pixels sont une unité de mesure absolue
+      
+      - Les em  
+      
+      - Les rem  
+      
+      - Les pourcentages (%)  
+
+        - Les em, rem et pourcentages sont des unités relatives
+
+      - Les unités rem sont basées sur la taille de la police de l'élément racine (généralement l'élément ***\<html>***)
+
+        - Rappel : 
+
+          ```CSS
+          html {
+            font-size: 62,5% /* Soit une police à 10px */
+          }
+
+          p {
+            font-size: 1.2rem /* soit le paragraphe sera de 12px */
+          }
+
+          a {
+            font-size: 2rem /* soit le lien sera de 20px */
+          }
+          
+          ```
+
+      - Une autre unité de mesure est le vw (viewport width), qui représente un pourcentage de la largeur de la fenêtre d'affichage. Ainsi, 1vw correspond à 1 % de la largeur de la fenêtre d'affichage  
+
+    - ***Box-sizing***
+
+      - La propriété CSS box-sizing permet de contrôler la manière dont les dimensions d'un élément sont calculées. Elle détermine si les marges intérieures (padding) et les bordures doivent être incluses dans la largeur et la hauteur totales ou non  
+
+        - Les valeurs courantes sont content-box (par défaut) et border-box  
+
+          - ***Le content-box***  
+
+            - La largeur et la hauteur spécifiées pour un élément sont uniquement appliquées au contenu de l'élément. Les bordures et le padding sont ajoutés en plus de ces dimensions
+
+          - ***Le border-box***  
+
+            - La largeur et la hauteur spécifiées pour un élément incluent le padding et les bordures  
+
+      - Exmeple :  
+
+        ```HTML
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8" />
+            <style>
+            .box {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+            padding: 20px;
+            margin: 20px;
+            }
+
+            .content-box {
+            box-sizing: content-box;
+            background-color: #f1f1f1;
+            }
+            .border-box {
+            box-sizing: border-box;
+            background-color: #e1e1e1;
+            }
+            </style>
+          </head>
+          <body>
+            <div class="box content-box">content-box</div>
+            <div class="box border-box">border-box</div>
+          </body>
+        </html>
+        ```
+    - ***Overflow***
+
+      - La propriété CSS ***overflow*** détermine comment le contenu qui dépasse les dimensions d'un élément est géré et les valeurs courantes sont :  
+      
+        - Visibles (par défaut)  
+          - Le contenu qui dépasse les dimensions de l'élément sera visible et s'étendra au-delà des limites de l'élément.  
+        - Hidden  
+          - Le contenu qui dépasse les dimensions de l'élément sera masqué et ne sera pas visible.  
+        - Scroll  
+          - Des barres de défilement seront toujours affichées pour l'élément, même si le contenu ne dépasse pas les dimensions.
+        - Auto  
+          - des barres de défilement seront affichées uniquement si le contenu dépasse les dimensions de l'élément.  
+
+          - Exemple :  
+
+            ```HTML
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <meta charset="utf-8" />
+                <style>
+                  .overflow-example {
+                  width: 200px;
+                  height: 200px;
+                  overflow: auto;
+                  border: 1px solid #000;
+                  }
+                </style>
+              </head>
+              <body>
+                <div class="overflow-example">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut felis et sapien bibendum cursus. Etiam congue fringilla venenatis. Praesent vitae leo at nunc vehicula fermentum vitae ut odio.
+                </div>
+              </body>
+            </html>
+            ```
+
+    - ***Éléments en ligne et display: inline-block***  
+
+      -  les éléments en ligne sont disposés horizontalement, côte à côte, et n'occupent que l'espace nécessaire pour leur contenu.    
+      - Les éléments en ligne ne respectent pas les propriétés width et height, et les marges horizontales (gauche et droite) contrôlent l'espacement entre les éléments.  
+      - Les éléments en ligne prennent en compte les propriétés padding, border et margin (à l'exception des marges supérieure et inférieure, qui n'affectent pas l'espacement vertical).  
+      - La hauteur d'un élément en ligne est déterminée par la hauteur de la ligne (line-height) et son contenu.  
+      - La propriété ***display: inline-block*** permet aux éléments d'avoir des dimensions spécifiées (largeur et hauteur) tout en conservant leur positionnement sur une même ligne.
+
+    - Exemple :  
+
+      ```HTML
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8" />
+          <style>
+            ul {
+            list-style-type: none;
+            background-color: #f1f1f1;
+            padding: 10px;
+            }
+
+            li {
+            display: inline;
+            }
+            
+            a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            margin: 5px;
+            }
+            
+            a:hover {
+            background-color: #e1e1e1;
+            }
+          </style>
+        </head>
+        <body>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </body>
+      </html>
+      ```
 
 
 
